@@ -1,4 +1,4 @@
-# AMZN RL - Kết quả test, model chính run 09
+# AMZN RL - báo cáo ngắn gọn
 
 Kết quả test được tổng hợp từ **`logs/assets_test.csv`** và sử dụng thống nhất trong JSON, README, log và báo cáo PDF. Model chính là **run 09, seed 8, checkpoint 32.768 bước**, chọn theo validation **208,514.04 USD**.
 
