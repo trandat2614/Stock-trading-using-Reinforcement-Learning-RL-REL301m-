@@ -1,0 +1,3814 @@
+{
+  "status": "complete",
+  "completed_at": "2026-10-31T06:01:56.001583+00:00",
+  "seed": 8,
+  "selected_run": 9,
+  "best_observed_test_run": 9,
+  "risk": {
+    "name": "risk_2",
+    "hold_penalty": 0.6,
+    "sell_boost": 0.25,
+    "entropy_multiplier": 3
+  },
+  "runs": [
+    {
+      "run": 1,
+      "seed": 0,
+      "model_dir": "run_01",
+      "training": {
+        "status": "complete",
+        "seed": 0,
+        "start": "2014-10-29",
+        "end": "2022-10-28",
+        "validation": [
+          "2022-10-31",
+          "2024-10-29"
+        ],
+        "requested_timesteps": 32768,
+        "actual_timesteps": 32768,
+        "best_checkpoint_steps": 16384,
+        "validation_metrics": {
+          "final_assets_close": 142213.15085584487,
+          "final_assets_prev_high": 141751.1883993505,
+          "peak_assets": 177064.96711099922,
+          "score": 0.14221315085584488,
+          "cagr": 0.19336841796520932,
+          "sharpe": 0.7408180498328019,
+          "max_drawdown": 0.23903018972589107,
+          "trades": 130,
+          "penalties": 0,
+          "total_fees": 71859.01908935091,
+          "cumulative_reward": 34.94293974945739,
+          "sessions": 502,
+          "score_prev_high": 0.1417511883993505,
+          "score_peak": 0.17706496711099923,
+          "target_reached": false,
+          "model_buy_requests": 24,
+          "model_sell_requests": 88,
+          "model_hold_requests": 390,
+          "guard_overrides": 18,
+          "meaningful_model_trades": 56,
+          "mean_exposure": 0.8194152923184593,
+          "turnover": 17.964754772337727
+        },
+        "validation_checkpoints": [
+          {
+            "timesteps": 16384,
+            "metrics": {
+              "final_assets_close": 142213.15085584487,
+              "final_assets_prev_high": 141751.1883993505,
+              "peak_assets": 177064.96711099922,
+              "score": 0.14221315085584488,
+              "cagr": 0.19336841796520932,
+              "sharpe": 0.7408180498328019,
+              "max_drawdown": 0.23903018972589107,
+              "trades": 130,
+              "penalties": 0,
+              "total_fees": 71859.01908935091,
+              "cumulative_reward": 34.94293974945739,
+              "sessions": 502,
+              "score_prev_high": 0.1417511883993505,
+              "score_peak": 0.17706496711099923,
+              "target_reached": false,
+              "model_buy_requests": 24,
+              "model_sell_requests": 88,
+              "model_hold_requests": 390,
+              "guard_overrides": 18,
+              "meaningful_model_trades": 56,
+              "mean_exposure": 0.8194152923184593,
+              "turnover": 17.964754772337727
+            }
+          },
+          {
+            "timesteps": 32768,
+            "metrics": {
+              "final_assets_close": 110972.99521805634,
+              "final_assets_prev_high": 110612.903882897,
+              "peak_assets": 163507.78166447108,
+              "score": 0.11097299521805634,
+              "cagr": 0.05365571798792468,
+              "sharpe": 0.32256081256995917,
+              "max_drawdown": 0.356874456047541,
+              "trades": 112,
+              "penalties": 0,
+              "total_fees": 67866.58355878215,
+              "cumulative_reward": 10.114754848036027,
+              "sessions": 502,
+              "score_prev_high": 0.11061290388289699,
+              "score_peak": 0.16350778166447108,
+              "target_reached": false,
+              "model_buy_requests": 25,
+              "model_sell_requests": 69,
+              "model_hold_requests": 408,
+              "guard_overrides": 18,
+              "meaningful_model_trades": 58,
+              "mean_exposure": 0.8608238611918114,
+              "turnover": 16.966645889695542
+            }
+          }
+        ],
+        "config_hash": "559ab779581c2ebc22e8f7fdba71e9c582f72b64ba28aa50cd332956e2ba6432",
+        "algorithm": "maskable",
+        "data_hash": "a1609ca57d01dea1c14e2ee560d8477756e65923229012aab289c3b88042ec42",
+        "source_hash": "ce9a936c6f39236c598e78f656a4573f7a789c910e02e5babf04a02684a8bb23",
+        "artifacts": {
+          "last.zip": "8b105b4a4872b70d2513a090c5915a4ada0a27dc8c777322d9a2a0d5defbe134",
+          "last_vecnormalize.pkl": "d8c13d8f5d3b5344a0a3372feb0889f9b96331920fdbbe78d01cd884e42c64a6",
+          "learning_curve.csv": "0d52b9db627ebca64610a22a94d97550ef7e67aa5ce1bd5cc3857bbdde838006"
+        }
+      },
+      "behavior_cloning": {
+        "split": "train_only",
+        "start": "2014-10-29",
+        "end": "2022-10-28",
+        "teacher": "flexible_expert",
+        "sampling": "natural/side-balanced mixture using BC_CLASS_POWER",
+        "rows": 3600,
+        "seed": 0,
+        "trajectories": [
+          [
+            "2014-10-29",
+            "2022-10-28"
+          ],
+          [
+            "2014-10-29",
+            "2016-10-21"
+          ],
+          [
+            "2015-10-29",
+            "2017-10-23"
+          ],
+          [
+            "2016-10-31",
+            "2018-10-24"
+          ],
+          [
+            "2017-10-31",
+            "2019-10-25"
+          ],
+          [
+            "2018-11-01",
+            "2020-10-27"
+          ],
+          [
+            "2019-11-04",
+            "2021-10-27"
+          ],
+          [
+            "2020-11-04",
+            "2022-10-28"
+          ]
+        ],
+        "class_counts": [
+          2805,
+          63,
+          19,
+          10,
+          9,
+          414,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          15,
+          3,
+          1,
+          4,
+          257
+        ],
+        "class_weights": [
+          0.34157687425613403,
+          2.2792115211486816,
+          4.0,
+          4.0,
+          4.0,
+          0.889108419418335,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          1.1284656524658203
+        ]
+      },
+      "train_optimization_peak": {
+        "assets": 118199.3773919726,
+        "date": "2015-02-13",
+        "rank": 3,
+        "episode": 10,
+        "transition": 32116
+      },
+      "validation": {
+        "final_assets_close": 142213.15085584487,
+        "final_assets_prev_high": 141751.1883993505,
+        "peak_assets": 177064.96711099922,
+        "score": 0.14221315085584488,
+        "cagr": 0.19336841796520932,
+        "sharpe": 0.7408180498328019,
+        "max_drawdown": 0.23903018972589107,
+        "trades": 130,
+        "penalties": 0,
+        "total_fees": 71859.01908935091,
+        "cumulative_reward": 34.94293974945739,
+        "sessions": 502,
+        "score_prev_high": 0.1417511883993505,
+        "score_peak": 0.17706496711099923,
+        "target_reached": false,
+        "model_buy_requests": 24,
+        "model_sell_requests": 88,
+        "model_hold_requests": 390,
+        "guard_overrides": 18,
+        "meaningful_model_trades": 56,
+        "mean_exposure": 0.8194152923184593,
+        "turnover": 17.964754772337727
+      },
+      "validation_peak": {
+        "assets": 177064.96711099922,
+        "date": "2024-02-09"
+      },
+      "validation_proof": {
+        "training": false,
+        "deterministic": true,
+        "normalizer_unchanged": true,
+        "model_sha256": "d4711950b759cfe7ceab2066263680cf0e20edadbc8cccc01ccbdfdfaba0c478",
+        "normalizer_sha256": "3e9dda5eddaa42922d5404f47f4cca740184df297939ec8764bd9e6d13634c90",
+        "audit": {
+          "status": "passed",
+          "sessions": 502,
+          "final_assets": 142213.15085584487,
+          "executed_sells": {
+            "close": 0,
+            "avg": 0,
+            "high": 88
+          },
+          "checks": "21 actions, modes, fractions, causal Guard, fees, penalties, cash/shares, previous High, rewards, done"
+        }
+      },
+      "test": {
+        "final_assets_close": 609508.593183278,
+        "final_assets_prev_high": 637203.3834492501,
+        "peak_assets": 624809.6406294166,
+        "score": 0.609508593183278,
+        "cagr": 1.482219342392296,
+        "sharpe": 3.784565999780071,
+        "max_drawdown": 0.18452457634444264,
+        "trades": 133,
+        "penalties": 0,
+        "total_fees": 536510.1886169974,
+        "cumulative_reward": 180.6074476779376,
+        "sessions": 501,
+        "score_prev_high": 0.6372033834492501,
+        "score_peak": 0.6248096406294166,
+        "target_reached": false,
+        "model_buy_requests": 69,
+        "model_sell_requests": 61,
+        "model_hold_requests": 371,
+        "guard_overrides": 3,
+        "meaningful_model_trades": 129,
+        "mean_exposure": 0.6070358628962522,
+        "turnover": 134.12754715424936,
+        "profit": 509508.593183278,
+        "total_return_pct": 509.508593183278
+      },
+      "test_peak": {
+        "assets": 624809.6406294166,
+        "date": "2026-10-28"
+      },
+      "test_proof": {
+        "kind": "csv_summary",
+        "source": "logs/assets_test.csv",
+        "audit": {
+          "status": "passed",
+          "scope": "test_csv_arithmetic",
+          "sessions": 501,
+          "final_assets": 609508.593183278,
+          "checks": [
+            "assets",
+            "cash_flow",
+            "shares_fractions",
+            "fees",
+            "asset_change",
+            "reward",
+            "cumulative_reward",
+            "guard_flags",
+            "peak_flags",
+            "step_sequence"
+          ]
+        }
+      }
+    },
+    {
+      "run": 2,
+      "seed": 1,
+      "model_dir": "run_02",
+      "training": {
+        "status": "complete",
+        "seed": 1,
+        "start": "2014-10-29",
+        "end": "2022-10-28",
+        "validation": [
+          "2022-10-31",
+          "2024-10-29"
+        ],
+        "requested_timesteps": 32768,
+        "actual_timesteps": 32768,
+        "best_checkpoint_steps": 32768,
+        "validation_metrics": {
+          "final_assets_close": 208107.71860426903,
+          "final_assets_prev_high": 207431.5892318158,
+          "peak_assets": 218107.96688863763,
+          "score": 0.20810771860426902,
+          "cagr": 0.4447015353971737,
+          "sharpe": 1.3152180044186885,
+          "max_drawdown": 0.19642926623925094,
+          "trades": 29,
+          "penalties": 0,
+          "total_fees": 3846.1538461291216,
+          "cumulative_reward": 72.98269434862092,
+          "sessions": 502,
+          "score_prev_high": 0.2074315892318158,
+          "score_peak": 0.21810796688863762,
+          "target_reached": false,
+          "model_buy_requests": 4,
+          "model_sell_requests": 0,
+          "model_hold_requests": 498,
+          "guard_overrides": 25,
+          "meaningful_model_trades": 4,
+          "mean_exposure": 0.9916348968716998,
+          "turnover": 0.9615384615322802
+        },
+        "validation_checkpoints": [
+          {
+            "timesteps": 16384,
+            "metrics": {
+              "final_assets_close": 168710.5365586763,
+              "final_assets_prev_high": 168162.49491893908,
+              "peak_assets": 204471.66818832434,
+              "score": 0.1687105365586763,
+              "cagr": 0.3002401661104521,
+              "sharpe": 1.0117650527627304,
+              "max_drawdown": 0.25872501863487907,
+              "trades": 81,
+              "penalties": 0,
+              "total_fees": 57784.345446285624,
+              "cumulative_reward": 52.01306183521469,
+              "sessions": 502,
+              "score_prev_high": 0.1681624949189391,
+              "score_peak": 0.20447166818832435,
+              "target_reached": false,
+              "model_buy_requests": 19,
+              "model_sell_requests": 42,
+              "model_hold_requests": 441,
+              "guard_overrides": 20,
+              "meaningful_model_trades": 41,
+              "mean_exposure": 0.9121456301750649,
+              "turnover": 14.446086361571403
+            }
+          },
+          {
+            "timesteps": 32768,
+            "metrics": {
+              "final_assets_close": 208107.71860426903,
+              "final_assets_prev_high": 207431.5892318158,
+              "peak_assets": 218107.96688863763,
+              "score": 0.20810771860426902,
+              "cagr": 0.4447015353971737,
+              "sharpe": 1.3152180044186885,
+              "max_drawdown": 0.19642926623925094,
+              "trades": 29,
+              "penalties": 0,
+              "total_fees": 3846.1538461291216,
+              "cumulative_reward": 72.98269434862092,
+              "sessions": 502,
+              "score_prev_high": 0.2074315892318158,
+              "score_peak": 0.21810796688863762,
+              "target_reached": false,
+              "model_buy_requests": 4,
+              "model_sell_requests": 0,
+              "model_hold_requests": 498,
+              "guard_overrides": 25,
+              "meaningful_model_trades": 4,
+              "mean_exposure": 0.9916348968716998,
+              "turnover": 0.9615384615322802
+            }
+          }
+        ],
+        "config_hash": "559ab779581c2ebc22e8f7fdba71e9c582f72b64ba28aa50cd332956e2ba6432",
+        "algorithm": "maskable",
+        "data_hash": "a1609ca57d01dea1c14e2ee560d8477756e65923229012aab289c3b88042ec42",
+        "source_hash": "ce9a936c6f39236c598e78f656a4573f7a789c910e02e5babf04a02684a8bb23",
+        "artifacts": {
+          "last.zip": "9e1d4aa641ecf8463fdd56a84d5c88584f46ae168f23baf12e9c2d880d2dab9d",
+          "last_vecnormalize.pkl": "1265fa9e6bc05b7c457afaa28fbf838f5bde1cda642bedd4072366fe013a52e2",
+          "learning_curve.csv": "d5a07d16d306367e143205bf84c05171a44ea62752b17eca347180c69e99bd39"
+        }
+      },
+      "behavior_cloning": {
+        "split": "train_only",
+        "start": "2014-10-29",
+        "end": "2022-10-28",
+        "teacher": "flexible_expert",
+        "sampling": "natural/side-balanced mixture using BC_CLASS_POWER",
+        "rows": 3600,
+        "seed": 1,
+        "trajectories": [
+          [
+            "2014-10-29",
+            "2022-10-28"
+          ],
+          [
+            "2014-10-29",
+            "2016-10-21"
+          ],
+          [
+            "2015-10-29",
+            "2017-10-23"
+          ],
+          [
+            "2016-10-31",
+            "2018-10-24"
+          ],
+          [
+            "2017-10-31",
+            "2019-10-25"
+          ],
+          [
+            "2018-11-01",
+            "2020-10-27"
+          ],
+          [
+            "2019-11-04",
+            "2021-10-27"
+          ],
+          [
+            "2020-11-04",
+            "2022-10-28"
+          ]
+        ],
+        "class_counts": [
+          2805,
+          63,
+          19,
+          10,
+          9,
+          414,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          15,
+          3,
+          1,
+          4,
+          257
+        ],
+        "class_weights": [
+          0.34157687425613403,
+          2.2792115211486816,
+          4.0,
+          4.0,
+          4.0,
+          0.889108419418335,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          1.1284656524658203
+        ]
+      },
+      "train_optimization_peak": {
+        "assets": 120874.49912967278,
+        "date": "2020-07-06",
+        "rank": 6,
+        "episode": 5,
+        "transition": 12559
+      },
+      "validation": {
+        "final_assets_close": 208107.71860426903,
+        "final_assets_prev_high": 207431.5892318158,
+        "peak_assets": 218107.96688863763,
+        "score": 0.20810771860426902,
+        "cagr": 0.4447015353971737,
+        "sharpe": 1.3152180044186885,
+        "max_drawdown": 0.19642926623925094,
+        "trades": 29,
+        "penalties": 0,
+        "total_fees": 3846.1538461291216,
+        "cumulative_reward": 72.98269434862092,
+        "sessions": 502,
+        "score_prev_high": 0.2074315892318158,
+        "score_peak": 0.21810796688863762,
+        "target_reached": false,
+        "model_buy_requests": 4,
+        "model_sell_requests": 0,
+        "model_hold_requests": 498,
+        "guard_overrides": 25,
+        "meaningful_model_trades": 4,
+        "mean_exposure": 0.9916348968716998,
+        "turnover": 0.9615384615322802
+      },
+      "validation_peak": {
+        "assets": 218107.96688863763,
+        "date": "2024-07-02"
+      },
+      "validation_proof": {
+        "training": false,
+        "deterministic": true,
+        "normalizer_unchanged": true,
+        "model_sha256": "9e1d4aa641ecf8463fdd56a84d5c88584f46ae168f23baf12e9c2d880d2dab9d",
+        "normalizer_sha256": "1265fa9e6bc05b7c457afaa28fbf838f5bde1cda642bedd4072366fe013a52e2",
+        "audit": {
+          "status": "passed",
+          "sessions": 502,
+          "final_assets": 208107.71860426903,
+          "executed_sells": {
+            "close": 0,
+            "avg": 0,
+            "high": 0
+          },
+          "checks": "21 actions, modes, fractions, causal Guard, fees, penalties, cash/shares, previous High, rewards, done"
+        }
+      },
+      "test": {
+        "final_assets_close": 862022.9801485508,
+        "final_assets_prev_high": 902167.2640253515,
+        "peak_assets": 892951.2847701903,
+        "score": 0.8620229801485508,
+        "cagr": 1.9550196721273836,
+        "sharpe": 4.691926152780715,
+        "max_drawdown": 0.038273341330616995,
+        "trades": 152,
+        "penalties": 0,
+        "total_fees": 805235.3879177079,
+        "cumulative_reward": 215.3084672242959,
+        "sessions": 501,
+        "score_prev_high": 0.9021672640253515,
+        "score_peak": 0.8929512847701903,
+        "target_reached": false,
+        "model_buy_requests": 73,
+        "model_sell_requests": 76,
+        "model_hold_requests": 352,
+        "guard_overrides": 3,
+        "meaningful_model_trades": 149,
+        "mean_exposure": 0.5373000532865363,
+        "turnover": 201.30884697942705,
+        "profit": 762022.9801485508,
+        "total_return_pct": 762.0229801485508
+      },
+      "test_peak": {
+        "assets": 892951.2847701903,
+        "date": "2026-10-28"
+      },
+      "test_proof": {
+        "kind": "csv_summary",
+        "source": "logs/assets_test.csv",
+        "audit": {
+          "status": "passed",
+          "scope": "test_csv_arithmetic",
+          "sessions": 501,
+          "final_assets": 862022.9801485508,
+          "checks": [
+            "assets",
+            "cash_flow",
+            "shares_fractions",
+            "fees",
+            "asset_change",
+            "reward",
+            "cumulative_reward",
+            "guard_flags",
+            "peak_flags",
+            "step_sequence"
+          ]
+        }
+      }
+    },
+    {
+      "run": 3,
+      "seed": 2,
+      "model_dir": "run_03",
+      "training": {
+        "status": "complete",
+        "seed": 2,
+        "start": "2014-10-29",
+        "end": "2022-10-28",
+        "validation": [
+          "2022-10-31",
+          "2024-10-29"
+        ],
+        "requested_timesteps": 32768,
+        "actual_timesteps": 32768,
+        "best_checkpoint_steps": 32768,
+        "validation_metrics": {
+          "final_assets_close": 149129.90717403725,
+          "final_assets_prev_high": 148645.47726705985,
+          "peak_assets": 172618.1652574153,
+          "score": 0.14912990717403724,
+          "cagr": 0.2221601538094986,
+          "sharpe": 0.8130832393186482,
+          "max_drawdown": 0.19639494328192675,
+          "trades": 107,
+          "penalties": 0,
+          "total_fees": 39417.09757550505,
+          "cumulative_reward": 39.680115543027036,
+          "sessions": 502,
+          "score_prev_high": 0.14864547726705984,
+          "score_peak": 0.1726181652574153,
+          "target_reached": false,
+          "model_buy_requests": 15,
+          "model_sell_requests": 71,
+          "model_hold_requests": 416,
+          "guard_overrides": 21,
+          "meaningful_model_trades": 32,
+          "mean_exposure": 0.8577483427281867,
+          "turnover": 9.854274393876262
+        },
+        "validation_checkpoints": [
+          {
+            "timesteps": 16384,
+            "metrics": {
+              "final_assets_close": 132939.82315606138,
+              "final_assets_prev_high": 132507.98493902426,
+              "peak_assets": 164560.76394233177,
+              "score": 0.13293982315606137,
+              "cagr": 0.15364947627177594,
+              "sharpe": 0.6275509148734999,
+              "max_drawdown": 0.23459693534433912,
+              "trades": 126,
+              "penalties": 0,
+              "total_fees": 53640.43035304065,
+              "cumulative_reward": 28.19602921291787,
+              "sessions": 502,
+              "score_prev_high": 0.13250798493902427,
+              "score_peak": 0.16456076394233177,
+              "target_reached": false,
+              "model_buy_requests": 20,
+              "model_sell_requests": 88,
+              "model_hold_requests": 394,
+              "guard_overrides": 18,
+              "meaningful_model_trades": 44,
+              "mean_exposure": 0.824912510018816,
+              "turnover": 13.41010758826016
+            }
+          },
+          {
+            "timesteps": 32768,
+            "metrics": {
+              "final_assets_close": 149129.90717403725,
+              "final_assets_prev_high": 148645.47726705985,
+              "peak_assets": 172618.1652574153,
+              "score": 0.14912990717403724,
+              "cagr": 0.2221601538094986,
+              "sharpe": 0.8130832393186482,
+              "max_drawdown": 0.19639494328192675,
+              "trades": 107,
+              "penalties": 0,
+              "total_fees": 39417.09757550505,
+              "cumulative_reward": 39.680115543027036,
+              "sessions": 502,
+              "score_prev_high": 0.14864547726705984,
+              "score_peak": 0.1726181652574153,
+              "target_reached": false,
+              "model_buy_requests": 15,
+              "model_sell_requests": 71,
+              "model_hold_requests": 416,
+              "guard_overrides": 21,
+              "meaningful_model_trades": 32,
+              "mean_exposure": 0.8577483427281867,
+              "turnover": 9.854274393876262
+            }
+          }
+        ],
+        "config_hash": "559ab779581c2ebc22e8f7fdba71e9c582f72b64ba28aa50cd332956e2ba6432",
+        "algorithm": "maskable",
+        "data_hash": "a1609ca57d01dea1c14e2ee560d8477756e65923229012aab289c3b88042ec42",
+        "source_hash": "ce9a936c6f39236c598e78f656a4573f7a789c910e02e5babf04a02684a8bb23",
+        "artifacts": {
+          "last.zip": "624c931f510f9237a68b6c6bf081ce0d6c886ba2db2c1465b91cf599594c6968",
+          "last_vecnormalize.pkl": "f1694863fead1c71b6f58d380c94341f24ad165af94343ce8fe3c2e7ca9dbca5",
+          "learning_curve.csv": "5f64d447c9ccec5ac6291ff78676eab5bbbd5ff17b33d227f4e80e365d64167e"
+        }
+      },
+      "behavior_cloning": {
+        "split": "train_only",
+        "start": "2014-10-29",
+        "end": "2022-10-28",
+        "teacher": "flexible_expert",
+        "sampling": "natural/side-balanced mixture using BC_CLASS_POWER",
+        "rows": 3600,
+        "seed": 2,
+        "trajectories": [
+          [
+            "2014-10-29",
+            "2022-10-28"
+          ],
+          [
+            "2014-10-29",
+            "2016-10-21"
+          ],
+          [
+            "2015-10-29",
+            "2017-10-23"
+          ],
+          [
+            "2016-10-31",
+            "2018-10-24"
+          ],
+          [
+            "2017-10-31",
+            "2019-10-25"
+          ],
+          [
+            "2018-11-01",
+            "2020-10-27"
+          ],
+          [
+            "2019-11-04",
+            "2021-10-27"
+          ],
+          [
+            "2020-11-04",
+            "2022-10-28"
+          ]
+        ],
+        "class_counts": [
+          2805,
+          63,
+          19,
+          10,
+          9,
+          414,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          15,
+          3,
+          1,
+          4,
+          257
+        ],
+        "class_weights": [
+          0.34157687425613403,
+          2.2792115211486816,
+          4.0,
+          4.0,
+          4.0,
+          0.889108419418335,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          1.1284656524658203
+        ]
+      },
+      "train_optimization_peak": {
+        "assets": 122112.66956843736,
+        "date": "2020-07-10",
+        "rank": 5,
+        "episode": 5,
+        "transition": 12590
+      },
+      "validation": {
+        "final_assets_close": 149129.90717403725,
+        "final_assets_prev_high": 148645.47726705985,
+        "peak_assets": 172618.1652574153,
+        "score": 0.14912990717403724,
+        "cagr": 0.2221601538094986,
+        "sharpe": 0.8130832393186482,
+        "max_drawdown": 0.19639494328192675,
+        "trades": 107,
+        "penalties": 0,
+        "total_fees": 39417.09757550505,
+        "cumulative_reward": 39.680115543027036,
+        "sessions": 502,
+        "score_prev_high": 0.14864547726705984,
+        "score_peak": 0.1726181652574153,
+        "target_reached": false,
+        "model_buy_requests": 15,
+        "model_sell_requests": 71,
+        "model_hold_requests": 416,
+        "guard_overrides": 21,
+        "meaningful_model_trades": 32,
+        "mean_exposure": 0.8577483427281867,
+        "turnover": 9.854274393876262
+      },
+      "validation_peak": {
+        "assets": 172618.1652574153,
+        "date": "2024-04-11"
+      },
+      "validation_proof": {
+        "training": false,
+        "deterministic": true,
+        "normalizer_unchanged": true,
+        "model_sha256": "624c931f510f9237a68b6c6bf081ce0d6c886ba2db2c1465b91cf599594c6968",
+        "normalizer_sha256": "f1694863fead1c71b6f58d380c94341f24ad165af94343ce8fe3c2e7ca9dbca5",
+        "audit": {
+          "status": "passed",
+          "sessions": 502,
+          "final_assets": 149129.90717403725,
+          "executed_sells": {
+            "close": 0,
+            "avg": 0,
+            "high": 71
+          },
+          "checks": "21 actions, modes, fractions, causal Guard, fees, penalties, cash/shares, previous High, rewards, done"
+        }
+      },
+      "test": {
+        "final_assets_close": 722543.376784411,
+        "final_assets_prev_high": 756301.3881503666,
+        "peak_assets": 750511.0341352336,
+        "score": 0.722543376784411,
+        "cagr": 1.7039796019161586,
+        "sharpe": 4.304060101606831,
+        "max_drawdown": 0.0549985477796493,
+        "trades": 144,
+        "penalties": 0,
+        "total_fees": 654601.6382096522,
+        "cumulative_reward": 197.6410042876757,
+        "sessions": 501,
+        "score_prev_high": 0.7563013881503666,
+        "score_peak": 0.7505110341352336,
+        "target_reached": false,
+        "model_buy_requests": 73,
+        "model_sell_requests": 68,
+        "model_hold_requests": 360,
+        "guard_overrides": 3,
+        "meaningful_model_trades": 141,
+        "mean_exposure": 0.5658598540525952,
+        "turnover": 163.65040955241307,
+        "profit": 622543.376784411,
+        "total_return_pct": 622.543376784411
+      },
+      "test_peak": {
+        "assets": 750511.0341352336,
+        "date": "2026-10-21"
+      },
+      "test_proof": {
+        "kind": "csv_summary",
+        "source": "logs/assets_test.csv",
+        "audit": {
+          "status": "passed",
+          "scope": "test_csv_arithmetic",
+          "sessions": 501,
+          "final_assets": 722543.376784411,
+          "checks": [
+            "assets",
+            "cash_flow",
+            "shares_fractions",
+            "fees",
+            "asset_change",
+            "reward",
+            "cumulative_reward",
+            "guard_flags",
+            "peak_flags",
+            "step_sequence"
+          ]
+        }
+      }
+    },
+    {
+      "run": 4,
+      "seed": 3,
+      "model_dir": "run_04",
+      "training": {
+        "status": "complete",
+        "seed": 3,
+        "start": "2014-10-29",
+        "end": "2022-10-28",
+        "validation": [
+          "2022-10-31",
+          "2024-10-29"
+        ],
+        "requested_timesteps": 32768,
+        "actual_timesteps": 32768,
+        "best_checkpoint_steps": 32768,
+        "validation_metrics": {
+          "final_assets_close": 173809.14963928348,
+          "final_assets_prev_high": 173244.47454733992,
+          "peak_assets": 188185.96535752603,
+          "score": 0.17380914963928348,
+          "cagr": 0.3198195275642255,
+          "sharpe": 1.0318900631251713,
+          "max_drawdown": 0.22063827431590832,
+          "trades": 60,
+          "penalties": 0,
+          "total_fees": 35598.20191585535,
+          "cumulative_reward": 54.96873620220862,
+          "sessions": 502,
+          "score_prev_high": 0.17324447454733993,
+          "score_peak": 0.18818596535752602,
+          "target_reached": false,
+          "model_buy_requests": 30,
+          "model_sell_requests": 7,
+          "model_hold_requests": 465,
+          "guard_overrides": 23,
+          "meaningful_model_trades": 37,
+          "mean_exposure": 0.9732323495502306,
+          "turnover": 8.899550478963837
+        },
+        "validation_checkpoints": [
+          {
+            "timesteps": 16384,
+            "metrics": {
+              "final_assets_close": 117005.21454634286,
+              "final_assets_prev_high": 116625.28802575354,
+              "peak_assets": 147040.69942845812,
+              "score": 0.11700521454634286,
+              "cagr": 0.08202794097899435,
+              "sharpe": 0.4103938799153831,
+              "max_drawdown": 0.2875745491374151,
+              "trades": 129,
+              "penalties": 0,
+              "total_fees": 84948.27732202844,
+              "cumulative_reward": 15.418949971467,
+              "sessions": 502,
+              "score_prev_high": 0.11662528802575355,
+              "score_peak": 0.14704069942845813,
+              "target_reached": false,
+              "model_buy_requests": 48,
+              "model_sell_requests": 65,
+              "model_hold_requests": 389,
+              "guard_overrides": 16,
+              "meaningful_model_trades": 85,
+              "mean_exposure": 0.860220686341145,
+              "turnover": 21.237069330507108
+            }
+          },
+          {
+            "timesteps": 32768,
+            "metrics": {
+              "final_assets_close": 173809.14963928348,
+              "final_assets_prev_high": 173244.47454733992,
+              "peak_assets": 188185.96535752603,
+              "score": 0.17380914963928348,
+              "cagr": 0.3198195275642255,
+              "sharpe": 1.0318900631251713,
+              "max_drawdown": 0.22063827431590832,
+              "trades": 60,
+              "penalties": 0,
+              "total_fees": 35598.20191585535,
+              "cumulative_reward": 54.96873620220862,
+              "sessions": 502,
+              "score_prev_high": 0.17324447454733993,
+              "score_peak": 0.18818596535752602,
+              "target_reached": false,
+              "model_buy_requests": 30,
+              "model_sell_requests": 7,
+              "model_hold_requests": 465,
+              "guard_overrides": 23,
+              "meaningful_model_trades": 37,
+              "mean_exposure": 0.9732323495502306,
+              "turnover": 8.899550478963837
+            }
+          }
+        ],
+        "config_hash": "559ab779581c2ebc22e8f7fdba71e9c582f72b64ba28aa50cd332956e2ba6432",
+        "algorithm": "maskable",
+        "data_hash": "a1609ca57d01dea1c14e2ee560d8477756e65923229012aab289c3b88042ec42",
+        "source_hash": "ce9a936c6f39236c598e78f656a4573f7a789c910e02e5babf04a02684a8bb23",
+        "artifacts": {
+          "last.zip": "a7eeb21e3e162b86dbdc02cdb0b6b0ef92d19b1dbea2706c8f49b2ae599167e6",
+          "last_vecnormalize.pkl": "cfe5139f8fa3bad8261ca15705eafdb25f8a663dac8876acaa483eb38a7470f9",
+          "learning_curve.csv": "748824be6750886be2af4ee429f1ed52830fb1c887debd0412957e3b08187edb"
+        }
+      },
+      "behavior_cloning": {
+        "split": "train_only",
+        "start": "2014-10-29",
+        "end": "2022-10-28",
+        "teacher": "flexible_expert",
+        "sampling": "natural/side-balanced mixture using BC_CLASS_POWER",
+        "rows": 3600,
+        "seed": 3,
+        "trajectories": [
+          [
+            "2014-10-29",
+            "2022-10-28"
+          ],
+          [
+            "2014-10-29",
+            "2016-10-21"
+          ],
+          [
+            "2015-10-29",
+            "2017-10-23"
+          ],
+          [
+            "2016-10-31",
+            "2018-10-24"
+          ],
+          [
+            "2017-10-31",
+            "2019-10-25"
+          ],
+          [
+            "2018-11-01",
+            "2020-10-27"
+          ],
+          [
+            "2019-11-04",
+            "2021-10-27"
+          ],
+          [
+            "2020-11-04",
+            "2022-10-28"
+          ]
+        ],
+        "class_counts": [
+          2805,
+          63,
+          19,
+          10,
+          9,
+          414,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          15,
+          3,
+          1,
+          4,
+          257
+        ],
+        "class_weights": [
+          0.34157687425613403,
+          2.2792115211486816,
+          4.0,
+          4.0,
+          4.0,
+          0.889108419418335,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          1.1284656524658203
+        ]
+      },
+      "train_optimization_peak": {
+        "assets": 113378.71817565334,
+        "date": "2020-07-09",
+        "rank": 1,
+        "episode": 6,
+        "transition": 16058
+      },
+      "validation": {
+        "final_assets_close": 173809.14963928348,
+        "final_assets_prev_high": 173244.47454733992,
+        "peak_assets": 188185.96535752603,
+        "score": 0.17380914963928348,
+        "cagr": 0.3198195275642255,
+        "sharpe": 1.0318900631251713,
+        "max_drawdown": 0.22063827431590832,
+        "trades": 60,
+        "penalties": 0,
+        "total_fees": 35598.20191585535,
+        "cumulative_reward": 54.96873620220862,
+        "sessions": 502,
+        "score_prev_high": 0.17324447454733993,
+        "score_peak": 0.18818596535752602,
+        "target_reached": false,
+        "model_buy_requests": 30,
+        "model_sell_requests": 7,
+        "model_hold_requests": 465,
+        "guard_overrides": 23,
+        "meaningful_model_trades": 37,
+        "mean_exposure": 0.9732323495502306,
+        "turnover": 8.899550478963837
+      },
+      "validation_peak": {
+        "assets": 188185.96535752603,
+        "date": "2024-04-11"
+      },
+      "validation_proof": {
+        "training": false,
+        "deterministic": true,
+        "normalizer_unchanged": true,
+        "model_sha256": "a7eeb21e3e162b86dbdc02cdb0b6b0ef92d19b1dbea2706c8f49b2ae599167e6",
+        "normalizer_sha256": "cfe5139f8fa3bad8261ca15705eafdb25f8a663dac8876acaa483eb38a7470f9",
+        "audit": {
+          "status": "passed",
+          "sessions": 502,
+          "final_assets": 173809.14963928348,
+          "executed_sells": {
+            "close": 0,
+            "avg": 0,
+            "high": 7
+          },
+          "checks": "21 actions, modes, fractions, causal Guard, fees, penalties, cash/shares, previous High, rewards, done"
+        }
+      },
+      "test": {
+        "final_assets_close": 816420.5179285681,
+        "final_assets_prev_high": 854441.1177365535,
+        "peak_assets": 845712.8148246063,
+        "score": 0.8164205179285681,
+        "cagr": 1.875326960393247,
+        "sharpe": 4.548848819367066,
+        "max_drawdown": 0.051602939567195416,
+        "trades": 143,
+        "penalties": 0,
+        "total_fees": 688648.6473124976,
+        "cumulative_reward": 209.8660598435696,
+        "sessions": 501,
+        "score_prev_high": 0.8544411177365535,
+        "score_peak": 0.8457128148246063,
+        "target_reached": false,
+        "model_buy_requests": 70,
+        "model_sell_requests": 70,
+        "model_hold_requests": 361,
+        "guard_overrides": 3,
+        "meaningful_model_trades": 140,
+        "mean_exposure": 0.5434379350483295,
+        "turnover": 172.16216182812443,
+        "profit": 716420.5179285681,
+        "total_return_pct": 716.4205179285681
+      },
+      "test_peak": {
+        "assets": 845712.8148246063,
+        "date": "2026-10-28"
+      },
+      "test_proof": {
+        "kind": "csv_summary",
+        "source": "logs/assets_test.csv",
+        "audit": {
+          "status": "passed",
+          "scope": "test_csv_arithmetic",
+          "sessions": 501,
+          "final_assets": 816420.5179285681,
+          "checks": [
+            "assets",
+            "cash_flow",
+            "shares_fractions",
+            "fees",
+            "asset_change",
+            "reward",
+            "cumulative_reward",
+            "guard_flags",
+            "peak_flags",
+            "step_sequence"
+          ]
+        }
+      }
+    },
+    {
+      "run": 5,
+      "seed": 4,
+      "model_dir": "run_05",
+      "training": {
+        "status": "complete",
+        "seed": 4,
+        "start": "2014-10-29",
+        "end": "2022-10-28",
+        "validation": [
+          "2022-10-31",
+          "2024-10-29"
+        ],
+        "requested_timesteps": 32768,
+        "actual_timesteps": 32768,
+        "best_checkpoint_steps": 32768,
+        "validation_metrics": {
+          "final_assets_close": 114971.83547601839,
+          "final_assets_prev_high": 114598.7746528513,
+          "peak_assets": 161556.92893908732,
+          "score": 0.11497183547601839,
+          "cagr": 0.07254724706333193,
+          "sharpe": 0.3802260880818569,
+          "max_drawdown": 0.3110935367423251,
+          "trades": 105,
+          "penalties": 0,
+          "total_fees": 77512.91351404888,
+          "cumulative_reward": 13.652642438765275,
+          "sessions": 502,
+          "score_prev_high": 0.1145987746528513,
+          "score_peak": 0.16155692893908732,
+          "target_reached": false,
+          "model_buy_requests": 28,
+          "model_sell_requests": 58,
+          "model_hold_requests": 416,
+          "guard_overrides": 19,
+          "meaningful_model_trades": 66,
+          "mean_exposure": 0.8857392600642733,
+          "turnover": 19.378228378512222
+        },
+        "validation_checkpoints": [
+          {
+            "timesteps": 16384,
+            "metrics": {
+              "final_assets_close": 105343.84090537034,
+              "final_assets_prev_high": 105001.6948908523,
+              "peak_assets": 160702.93431276118,
+              "score": 0.10534384090537034,
+              "cagr": 0.026477921637338087,
+              "sharpe": 0.23651440952141853,
+              "max_drawdown": 0.3625009713921252,
+              "trades": 122,
+              "penalties": 0,
+              "total_fees": 92531.47592185675,
+              "cumulative_reward": 4.911416706579142,
+              "sessions": 502,
+              "score_prev_high": 0.1050016948908523,
+              "score_peak": 0.16070293431276117,
+              "target_reached": false,
+              "model_buy_requests": 31,
+              "model_sell_requests": 73,
+              "model_hold_requests": 398,
+              "guard_overrides": 18,
+              "meaningful_model_trades": 79,
+              "mean_exposure": 0.8568387879156104,
+              "turnover": 23.132868980464192
+            }
+          },
+          {
+            "timesteps": 32768,
+            "metrics": {
+              "final_assets_close": 114971.83547601839,
+              "final_assets_prev_high": 114598.7746528513,
+              "peak_assets": 161556.92893908732,
+              "score": 0.11497183547601839,
+              "cagr": 0.07254724706333193,
+              "sharpe": 0.3802260880818569,
+              "max_drawdown": 0.3110935367423251,
+              "trades": 105,
+              "penalties": 0,
+              "total_fees": 77512.91351404888,
+              "cumulative_reward": 13.652642438765275,
+              "sessions": 502,
+              "score_prev_high": 0.1145987746528513,
+              "score_peak": 0.16155692893908732,
+              "target_reached": false,
+              "model_buy_requests": 28,
+              "model_sell_requests": 58,
+              "model_hold_requests": 416,
+              "guard_overrides": 19,
+              "meaningful_model_trades": 66,
+              "mean_exposure": 0.8857392600642733,
+              "turnover": 19.378228378512222
+            }
+          }
+        ],
+        "config_hash": "559ab779581c2ebc22e8f7fdba71e9c582f72b64ba28aa50cd332956e2ba6432",
+        "algorithm": "maskable",
+        "data_hash": "a1609ca57d01dea1c14e2ee560d8477756e65923229012aab289c3b88042ec42",
+        "source_hash": "ce9a936c6f39236c598e78f656a4573f7a789c910e02e5babf04a02684a8bb23",
+        "artifacts": {
+          "last.zip": "0d905c93a9a617ec479521cb9ad646341626d864d5468f67eeff6cb94dbf4228",
+          "last_vecnormalize.pkl": "653aa11fa8bba84894aa922d16ea511ee0e676072af4170032b7fe34beb77edc",
+          "learning_curve.csv": "e34b35e9ce9ab6738c9bc55cb7aede9c76035ef02a72bdbda33324a162250c36"
+        }
+      },
+      "behavior_cloning": {
+        "split": "train_only",
+        "start": "2014-10-29",
+        "end": "2022-10-28",
+        "teacher": "flexible_expert",
+        "sampling": "natural/side-balanced mixture using BC_CLASS_POWER",
+        "rows": 3600,
+        "seed": 4,
+        "trajectories": [
+          [
+            "2014-10-29",
+            "2022-10-28"
+          ],
+          [
+            "2014-10-29",
+            "2016-10-21"
+          ],
+          [
+            "2015-10-29",
+            "2017-10-23"
+          ],
+          [
+            "2016-10-31",
+            "2018-10-24"
+          ],
+          [
+            "2017-10-31",
+            "2019-10-25"
+          ],
+          [
+            "2018-11-01",
+            "2020-10-27"
+          ],
+          [
+            "2019-11-04",
+            "2021-10-27"
+          ],
+          [
+            "2020-11-04",
+            "2022-10-28"
+          ]
+        ],
+        "class_counts": [
+          2805,
+          63,
+          19,
+          10,
+          9,
+          414,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          15,
+          3,
+          1,
+          4,
+          257
+        ],
+        "class_weights": [
+          0.34157687425613403,
+          2.2792115211486816,
+          4.0,
+          4.0,
+          4.0,
+          0.889108419418335,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          1.1284656524658203
+        ]
+      },
+      "train_optimization_peak": {
+        "assets": 116521.30760920631,
+        "date": "2020-07-09",
+        "rank": 5,
+        "episode": 3,
+        "transition": 4910
+      },
+      "validation": {
+        "final_assets_close": 114971.83547601839,
+        "final_assets_prev_high": 114598.7746528513,
+        "peak_assets": 161556.92893908732,
+        "score": 0.11497183547601839,
+        "cagr": 0.07254724706333193,
+        "sharpe": 0.3802260880818569,
+        "max_drawdown": 0.3110935367423251,
+        "trades": 105,
+        "penalties": 0,
+        "total_fees": 77512.91351404888,
+        "cumulative_reward": 13.652642438765275,
+        "sessions": 502,
+        "score_prev_high": 0.1145987746528513,
+        "score_peak": 0.16155692893908732,
+        "target_reached": false,
+        "model_buy_requests": 28,
+        "model_sell_requests": 58,
+        "model_hold_requests": 416,
+        "guard_overrides": 19,
+        "meaningful_model_trades": 66,
+        "mean_exposure": 0.8857392600642733,
+        "turnover": 19.378228378512222
+      },
+      "validation_peak": {
+        "assets": 161556.92893908732,
+        "date": "2024-02-09"
+      },
+      "validation_proof": {
+        "training": false,
+        "deterministic": true,
+        "normalizer_unchanged": true,
+        "model_sha256": "0d905c93a9a617ec479521cb9ad646341626d864d5468f67eeff6cb94dbf4228",
+        "normalizer_sha256": "653aa11fa8bba84894aa922d16ea511ee0e676072af4170032b7fe34beb77edc",
+        "audit": {
+          "status": "passed",
+          "sessions": 502,
+          "final_assets": 114971.83547601839,
+          "executed_sells": {
+            "close": 0,
+            "avg": 0,
+            "high": 58
+          },
+          "checks": "21 actions, modes, fractions, causal Guard, fees, penalties, cash/shares, previous High, rewards, done"
+        }
+      },
+      "test": {
+        "final_assets_close": 645160.4047251575,
+        "final_assets_prev_high": 675252.4289925365,
+        "peak_assets": 668755.323417291,
+        "score": 0.6451604047251576,
+        "cagr": 1.554218273669508,
+        "sharpe": 4.063416266592017,
+        "max_drawdown": 0.0720551051176419,
+        "trades": 132,
+        "penalties": 0,
+        "total_fees": 540029.8844731373,
+        "cumulative_reward": 186.30418383125516,
+        "sessions": 501,
+        "score_prev_high": 0.6752524289925365,
+        "score_peak": 0.668755323417291,
+        "target_reached": false,
+        "model_buy_requests": 66,
+        "model_sell_requests": 63,
+        "model_hold_requests": 372,
+        "guard_overrides": 3,
+        "meaningful_model_trades": 129,
+        "mean_exposure": 0.5953474519757338,
+        "turnover": 135.00747111828434,
+        "profit": 545160.4047251575,
+        "total_return_pct": 545.1604047251576
+      },
+      "test_peak": {
+        "assets": 668755.323417291,
+        "date": "2026-10-28"
+      },
+      "test_proof": {
+        "kind": "csv_summary",
+        "source": "logs/assets_test.csv",
+        "audit": {
+          "status": "passed",
+          "scope": "test_csv_arithmetic",
+          "sessions": 501,
+          "final_assets": 645160.4047251575,
+          "checks": [
+            "assets",
+            "cash_flow",
+            "shares_fractions",
+            "fees",
+            "asset_change",
+            "reward",
+            "cumulative_reward",
+            "guard_flags",
+            "peak_flags",
+            "step_sequence"
+          ]
+        }
+      }
+    },
+    {
+      "run": 6,
+      "seed": 5,
+      "model_dir": "run_06",
+      "training": {
+        "status": "complete",
+        "seed": 5,
+        "start": "2014-10-29",
+        "end": "2022-10-28",
+        "validation": [
+          "2022-10-31",
+          "2024-10-29"
+        ],
+        "requested_timesteps": 32768,
+        "actual_timesteps": 32768,
+        "best_checkpoint_steps": 32768,
+        "validation_metrics": {
+          "final_assets_close": 148998.70723492972,
+          "final_assets_prev_high": 148514.89492790235,
+          "peak_assets": 187078.23759944056,
+          "score": 0.14899870723492972,
+          "cagr": 0.22162028405117806,
+          "sharpe": 0.786093902900254,
+          "max_drawdown": 0.2869101803101044,
+          "trades": 70,
+          "penalties": 0,
+          "total_fees": 36929.90516583875,
+          "cumulative_reward": 39.56964963682522,
+          "sessions": 502,
+          "score_prev_high": 0.14851489492790235,
+          "score_peak": 0.18707823759944056,
+          "target_reached": false,
+          "model_buy_requests": 20,
+          "model_sell_requests": 28,
+          "model_hold_requests": 454,
+          "guard_overrides": 22,
+          "meaningful_model_trades": 32,
+          "mean_exposure": 0.9146639512750323,
+          "turnover": 9.232476291459687
+        },
+        "validation_checkpoints": [
+          {
+            "timesteps": 16384,
+            "metrics": {
+              "final_assets_close": 110685.85206157189,
+              "final_assets_prev_high": 110326.66987971864,
+              "peak_assets": 140498.05650960057,
+              "score": 0.11068585206157189,
+              "cagr": 0.0522862344965036,
+              "sharpe": 0.31855407208209113,
+              "max_drawdown": 0.29164056634880375,
+              "trades": 158,
+              "penalties": 0,
+              "total_fees": 69066.04343786104,
+              "cumulative_reward": 9.880329019670159,
+              "sessions": 502,
+              "score_prev_high": 0.11032666987971863,
+              "score_peak": 0.14049805650960057,
+              "target_reached": false,
+              "model_buy_requests": 37,
+              "model_sell_requests": 105,
+              "model_hold_requests": 360,
+              "guard_overrides": 16,
+              "meaningful_model_trades": 66,
+              "mean_exposure": 0.789816005815235,
+              "turnover": 17.26651085946526
+            }
+          },
+          {
+            "timesteps": 32768,
+            "metrics": {
+              "final_assets_close": 148998.70723492972,
+              "final_assets_prev_high": 148514.89492790235,
+              "peak_assets": 187078.23759944056,
+              "score": 0.14899870723492972,
+              "cagr": 0.22162028405117806,
+              "sharpe": 0.786093902900254,
+              "max_drawdown": 0.2869101803101044,
+              "trades": 70,
+              "penalties": 0,
+              "total_fees": 36929.90516583875,
+              "cumulative_reward": 39.56964963682522,
+              "sessions": 502,
+              "score_prev_high": 0.14851489492790235,
+              "score_peak": 0.18707823759944056,
+              "target_reached": false,
+              "model_buy_requests": 20,
+              "model_sell_requests": 28,
+              "model_hold_requests": 454,
+              "guard_overrides": 22,
+              "meaningful_model_trades": 32,
+              "mean_exposure": 0.9146639512750323,
+              "turnover": 9.232476291459687
+            }
+          }
+        ],
+        "config_hash": "559ab779581c2ebc22e8f7fdba71e9c582f72b64ba28aa50cd332956e2ba6432",
+        "algorithm": "maskable",
+        "data_hash": "a1609ca57d01dea1c14e2ee560d8477756e65923229012aab289c3b88042ec42",
+        "source_hash": "ce9a936c6f39236c598e78f656a4573f7a789c910e02e5babf04a02684a8bb23",
+        "artifacts": {
+          "last.zip": "d266faf15aec745ef1ab66fdc44f960c3e4dc76017d58758da8ab9178c07437a",
+          "last_vecnormalize.pkl": "e78a39ab5585095fa9cd93728fc2b7fa40c8a0c18c1f6da48719d7929f1597e7",
+          "learning_curve.csv": "7526c8b842ebd0f61c59f1bbf009b6f192fc2e2462037dc03d0c3e230044f2a4"
+        }
+      },
+      "behavior_cloning": {
+        "split": "train_only",
+        "start": "2014-10-29",
+        "end": "2022-10-28",
+        "teacher": "flexible_expert",
+        "sampling": "natural/side-balanced mixture using BC_CLASS_POWER",
+        "rows": 3600,
+        "seed": 5,
+        "trajectories": [
+          [
+            "2014-10-29",
+            "2022-10-28"
+          ],
+          [
+            "2014-10-29",
+            "2016-10-21"
+          ],
+          [
+            "2015-10-29",
+            "2017-10-23"
+          ],
+          [
+            "2016-10-31",
+            "2018-10-24"
+          ],
+          [
+            "2017-10-31",
+            "2019-10-25"
+          ],
+          [
+            "2018-11-01",
+            "2020-10-27"
+          ],
+          [
+            "2019-11-04",
+            "2021-10-27"
+          ],
+          [
+            "2020-11-04",
+            "2022-10-28"
+          ]
+        ],
+        "class_counts": [
+          2805,
+          63,
+          19,
+          10,
+          9,
+          414,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          15,
+          3,
+          1,
+          4,
+          257
+        ],
+        "class_weights": [
+          0.34157687425613403,
+          2.2792115211486816,
+          4.0,
+          4.0,
+          4.0,
+          0.889108419418335,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          1.1284656524658203
+        ]
+      },
+      "train_optimization_peak": {
+        "assets": 129078.9866552928,
+        "date": "2020-07-10",
+        "rank": 2,
+        "episode": 5,
+        "transition": 12587
+      },
+      "validation": {
+        "final_assets_close": 148998.70723492972,
+        "final_assets_prev_high": 148514.89492790235,
+        "peak_assets": 187078.23759944056,
+        "score": 0.14899870723492972,
+        "cagr": 0.22162028405117806,
+        "sharpe": 0.786093902900254,
+        "max_drawdown": 0.2869101803101044,
+        "trades": 70,
+        "penalties": 0,
+        "total_fees": 36929.90516583875,
+        "cumulative_reward": 39.56964963682522,
+        "sessions": 502,
+        "score_prev_high": 0.14851489492790235,
+        "score_peak": 0.18707823759944056,
+        "target_reached": false,
+        "model_buy_requests": 20,
+        "model_sell_requests": 28,
+        "model_hold_requests": 454,
+        "guard_overrides": 22,
+        "meaningful_model_trades": 32,
+        "mean_exposure": 0.9146639512750323,
+        "turnover": 9.232476291459687
+      },
+      "validation_peak": {
+        "assets": 187078.23759944056,
+        "date": "2024-04-11"
+      },
+      "validation_proof": {
+        "training": false,
+        "deterministic": true,
+        "normalizer_unchanged": true,
+        "model_sha256": "d266faf15aec745ef1ab66fdc44f960c3e4dc76017d58758da8ab9178c07437a",
+        "normalizer_sha256": "e78a39ab5585095fa9cd93728fc2b7fa40c8a0c18c1f6da48719d7929f1597e7",
+        "audit": {
+          "status": "passed",
+          "sessions": 502,
+          "final_assets": 148998.70723492972,
+          "executed_sells": {
+            "close": 0,
+            "avg": 0,
+            "high": 28
+          },
+          "checks": "21 actions, modes, fractions, causal Guard, fees, penalties, cash/shares, previous High, rewards, done"
+        }
+      },
+      "test": {
+        "final_assets_close": 842569.2997844488,
+        "final_assets_prev_high": 881807.6286035579,
+        "peak_assets": 872799.6305958831,
+        "score": 0.8425692997844488,
+        "cagr": 1.9212860835578094,
+        "sharpe": 4.6366901942191,
+        "max_drawdown": 0.03827551356495029,
+        "trades": 149,
+        "penalties": 0,
+        "total_fees": 776504.4772566091,
+        "cumulative_reward": 213.02337689394992,
+        "sessions": 501,
+        "score_prev_high": 0.881807628603558,
+        "score_peak": 0.8727996305958832,
+        "target_reached": false,
+        "model_buy_requests": 74,
+        "model_sell_requests": 72,
+        "model_hold_requests": 355,
+        "guard_overrides": 3,
+        "meaningful_model_trades": 146,
+        "mean_exposure": 0.5443866088403656,
+        "turnover": 194.1261193141523,
+        "profit": 742569.2997844488,
+        "total_return_pct": 742.5692997844488
+      },
+      "test_peak": {
+        "assets": 872799.6305958831,
+        "date": "2026-10-28"
+      },
+      "test_proof": {
+        "kind": "csv_summary",
+        "source": "logs/assets_test.csv",
+        "audit": {
+          "status": "passed",
+          "scope": "test_csv_arithmetic",
+          "sessions": 501,
+          "final_assets": 842569.2997844488,
+          "checks": [
+            "assets",
+            "cash_flow",
+            "shares_fractions",
+            "fees",
+            "asset_change",
+            "reward",
+            "cumulative_reward",
+            "guard_flags",
+            "peak_flags",
+            "step_sequence"
+          ]
+        }
+      }
+    },
+    {
+      "run": 7,
+      "seed": 6,
+      "model_dir": "run_07",
+      "training": {
+        "status": "complete",
+        "seed": 6,
+        "start": "2014-10-29",
+        "end": "2022-10-28",
+        "validation": [
+          "2022-10-31",
+          "2024-10-29"
+        ],
+        "requested_timesteps": 32768,
+        "actual_timesteps": 32768,
+        "best_checkpoint_steps": 32768,
+        "validation_metrics": {
+          "final_assets_close": 132464.2530941115,
+          "final_assets_prev_high": 132034.42573223385,
+          "peak_assets": 183083.7232663028,
+          "score": 0.1324642530941115,
+          "cagr": 0.15157591208368704,
+          "sharpe": 0.6082718472540867,
+          "max_drawdown": 0.3144078488382085,
+          "trades": 95,
+          "penalties": 0,
+          "total_fees": 61341.90904851172,
+          "cumulative_reward": 27.81700481169449,
+          "sessions": 502,
+          "score_prev_high": 0.13203442573223384,
+          "score_peak": 0.18308372326630282,
+          "target_reached": false,
+          "model_buy_requests": 35,
+          "model_sell_requests": 42,
+          "model_hold_requests": 425,
+          "guard_overrides": 18,
+          "meaningful_model_trades": 58,
+          "mean_exposure": 0.9173495357443782,
+          "turnover": 15.335477262127931
+        },
+        "validation_checkpoints": [
+          {
+            "timesteps": 16384,
+            "metrics": {
+              "final_assets_close": 123014.98520092726,
+              "final_assets_prev_high": 122615.80038574217,
+              "peak_assets": 173355.7215673981,
+              "score": 0.12301498520092725,
+              "cagr": 0.10957894877300478,
+              "sharpe": 0.4931323413581957,
+              "max_drawdown": 0.3301649955399447,
+              "trades": 134,
+              "penalties": 0,
+              "total_fees": 92441.92526398413,
+              "cumulative_reward": 20.427267992976176,
+              "sessions": 502,
+              "score_prev_high": 0.12261580038574217,
+              "score_peak": 0.17335572156739812,
+              "target_reached": false,
+              "model_buy_requests": 45,
+              "model_sell_requests": 72,
+              "model_hold_requests": 385,
+              "guard_overrides": 17,
+              "meaningful_model_trades": 81,
+              "mean_exposure": 0.8620522151571302,
+              "turnover": 23.110481315996033
+            }
+          },
+          {
+            "timesteps": 32768,
+            "metrics": {
+              "final_assets_close": 132464.2530941115,
+              "final_assets_prev_high": 132034.42573223385,
+              "peak_assets": 183083.7232663028,
+              "score": 0.1324642530941115,
+              "cagr": 0.15157591208368704,
+              "sharpe": 0.6082718472540867,
+              "max_drawdown": 0.3144078488382085,
+              "trades": 95,
+              "penalties": 0,
+              "total_fees": 61341.90904851172,
+              "cumulative_reward": 27.81700481169449,
+              "sessions": 502,
+              "score_prev_high": 0.13203442573223384,
+              "score_peak": 0.18308372326630282,
+              "target_reached": false,
+              "model_buy_requests": 35,
+              "model_sell_requests": 42,
+              "model_hold_requests": 425,
+              "guard_overrides": 18,
+              "meaningful_model_trades": 58,
+              "mean_exposure": 0.9173495357443782,
+              "turnover": 15.335477262127931
+            }
+          }
+        ],
+        "config_hash": "559ab779581c2ebc22e8f7fdba71e9c582f72b64ba28aa50cd332956e2ba6432",
+        "algorithm": "maskable",
+        "data_hash": "a1609ca57d01dea1c14e2ee560d8477756e65923229012aab289c3b88042ec42",
+        "source_hash": "ce9a936c6f39236c598e78f656a4573f7a789c910e02e5babf04a02684a8bb23",
+        "artifacts": {
+          "last.zip": "2ed59c304607438ca20e2dce448806389ac2e4f9643100a3bf5e84509a51a78c",
+          "last_vecnormalize.pkl": "6f647539826146d509ff486846f2d9fad3a994729823328fa8dfc18ad542162b",
+          "learning_curve.csv": "d68d83968a73a4880e9003723c585156185b117b4d35b6467f7484253ee8ef92"
+        }
+      },
+      "behavior_cloning": {
+        "split": "train_only",
+        "start": "2014-10-29",
+        "end": "2022-10-28",
+        "teacher": "flexible_expert",
+        "sampling": "natural/side-balanced mixture using BC_CLASS_POWER",
+        "rows": 3600,
+        "seed": 6,
+        "trajectories": [
+          [
+            "2014-10-29",
+            "2022-10-28"
+          ],
+          [
+            "2014-10-29",
+            "2016-10-21"
+          ],
+          [
+            "2015-10-29",
+            "2017-10-23"
+          ],
+          [
+            "2016-10-31",
+            "2018-10-24"
+          ],
+          [
+            "2017-10-31",
+            "2019-10-25"
+          ],
+          [
+            "2018-11-01",
+            "2020-10-27"
+          ],
+          [
+            "2019-11-04",
+            "2021-10-27"
+          ],
+          [
+            "2020-11-04",
+            "2022-10-28"
+          ]
+        ],
+        "class_counts": [
+          2805,
+          63,
+          19,
+          10,
+          9,
+          414,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          15,
+          3,
+          1,
+          4,
+          257
+        ],
+        "class_weights": [
+          0.34157687425613403,
+          2.2792115211486816,
+          4.0,
+          4.0,
+          4.0,
+          0.889108419418335,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          1.1284656524658203
+        ]
+      },
+      "train_optimization_peak": {
+        "assets": 120363.22362778804,
+        "date": "2020-07-09",
+        "rank": 1,
+        "episode": 5,
+        "transition": 12578
+      },
+      "validation": {
+        "final_assets_close": 132464.2530941115,
+        "final_assets_prev_high": 132034.42573223385,
+        "peak_assets": 183083.7232663028,
+        "score": 0.1324642530941115,
+        "cagr": 0.15157591208368704,
+        "sharpe": 0.6082718472540867,
+        "max_drawdown": 0.3144078488382085,
+        "trades": 95,
+        "penalties": 0,
+        "total_fees": 61341.90904851172,
+        "cumulative_reward": 27.81700481169449,
+        "sessions": 502,
+        "score_prev_high": 0.13203442573223384,
+        "score_peak": 0.18308372326630282,
+        "target_reached": false,
+        "model_buy_requests": 35,
+        "model_sell_requests": 42,
+        "model_hold_requests": 425,
+        "guard_overrides": 18,
+        "meaningful_model_trades": 58,
+        "mean_exposure": 0.9173495357443782,
+        "turnover": 15.335477262127931
+      },
+      "validation_peak": {
+        "assets": 183083.7232663028,
+        "date": "2024-04-11"
+      },
+      "validation_proof": {
+        "training": false,
+        "deterministic": true,
+        "normalizer_unchanged": true,
+        "model_sha256": "2ed59c304607438ca20e2dce448806389ac2e4f9643100a3bf5e84509a51a78c",
+        "normalizer_sha256": "6f647539826146d509ff486846f2d9fad3a994729823328fa8dfc18ad542162b",
+        "audit": {
+          "status": "passed",
+          "sessions": 502,
+          "final_assets": 132464.2530941115,
+          "executed_sells": {
+            "close": 0,
+            "avg": 0,
+            "high": 42
+          },
+          "checks": "21 actions, modes, fractions, causal Guard, fees, penalties, cash/shares, previous High, rewards, done"
+        }
+      },
+      "test": {
+        "final_assets_close": 766708.7533924693,
+        "final_assets_prev_high": 802096.9964340901,
+        "peak_assets": 791197.2620977585,
+        "score": 0.7667087533924692,
+        "cagr": 1.785888976273624,
+        "sharpe": 4.4579084305546575,
+        "max_drawdown": 0.04271050745663829,
+        "trades": 146,
+        "penalties": 0,
+        "total_fees": 698475.1591357498,
+        "cumulative_reward": 203.58189465002363,
+        "sessions": 501,
+        "score_prev_high": 0.80209699643409,
+        "score_peak": 0.7911972620977584,
+        "target_reached": false,
+        "model_buy_requests": 71,
+        "model_sell_requests": 72,
+        "model_hold_requests": 358,
+        "guard_overrides": 3,
+        "meaningful_model_trades": 143,
+        "mean_exposure": 0.55419587248338,
+        "turnover": 174.61878978393747,
+        "profit": 666708.7533924693,
+        "total_return_pct": 666.7087533924692
+      },
+      "test_peak": {
+        "assets": 791197.2620977585,
+        "date": "2026-10-28"
+      },
+      "test_proof": {
+        "kind": "csv_summary",
+        "source": "logs/assets_test.csv",
+        "audit": {
+          "status": "passed",
+          "scope": "test_csv_arithmetic",
+          "sessions": 501,
+          "final_assets": 766708.7533924693,
+          "checks": [
+            "assets",
+            "cash_flow",
+            "shares_fractions",
+            "fees",
+            "asset_change",
+            "reward",
+            "cumulative_reward",
+            "guard_flags",
+            "peak_flags",
+            "step_sequence"
+          ]
+        }
+      }
+    },
+    {
+      "run": 8,
+      "seed": 7,
+      "model_dir": "run_08",
+      "training": {
+        "status": "complete",
+        "seed": 7,
+        "start": "2014-10-29",
+        "end": "2022-10-28",
+        "validation": [
+          "2022-10-31",
+          "2024-10-29"
+        ],
+        "requested_timesteps": 32768,
+        "actual_timesteps": 32768,
+        "best_checkpoint_steps": 32768,
+        "validation_metrics": {
+          "final_assets_close": 109501.48665240285,
+          "final_assets_prev_high": 109145.78476164215,
+          "peak_assets": 148272.36144664828,
+          "score": 0.10950148665240285,
+          "cagr": 0.046618805089055027,
+          "sharpe": 0.30017733945474306,
+          "max_drawdown": 0.30028596049609957,
+          "trades": 145,
+          "penalties": 0,
+          "total_fees": 79516.68514516143,
+          "cumulative_reward": 8.797013819412626,
+          "sessions": 502,
+          "score_prev_high": 0.10914578476164215,
+          "score_peak": 0.1482723614466483,
+          "target_reached": false,
+          "model_buy_requests": 32,
+          "model_sell_requests": 97,
+          "model_hold_requests": 373,
+          "guard_overrides": 16,
+          "meaningful_model_trades": 75,
+          "mean_exposure": 0.8108000811177607,
+          "turnover": 19.879171286290358
+        },
+        "validation_checkpoints": [
+          {
+            "timesteps": 16384,
+            "metrics": {
+              "final_assets_close": 88667.2240863718,
+              "final_assets_prev_high": 88379.22054306425,
+              "peak_assets": 139969.30224879403,
+              "score": 0.0886672240863718,
+              "cagr": -0.05859283680444882,
+              "sharpe": -0.061159848198440774,
+              "max_drawdown": 0.39975829406593644,
+              "trades": 163,
+              "penalties": 0,
+              "total_fees": 88224.39912089135,
+              "cumulative_reward": -12.300689147253802,
+              "sessions": 502,
+              "score_prev_high": 0.08837922054306425,
+              "score_peak": 0.13996930224879403,
+              "target_reached": false,
+              "model_buy_requests": 43,
+              "model_sell_requests": 107,
+              "model_hold_requests": 352,
+              "guard_overrides": 13,
+              "meaningful_model_trades": 89,
+              "mean_exposure": 0.7900022634728644,
+              "turnover": 22.056099780222837
+            }
+          },
+          {
+            "timesteps": 32768,
+            "metrics": {
+              "final_assets_close": 109501.48665240285,
+              "final_assets_prev_high": 109145.78476164215,
+              "peak_assets": 148272.36144664828,
+              "score": 0.10950148665240285,
+              "cagr": 0.046618805089055027,
+              "sharpe": 0.30017733945474306,
+              "max_drawdown": 0.30028596049609957,
+              "trades": 145,
+              "penalties": 0,
+              "total_fees": 79516.68514516143,
+              "cumulative_reward": 8.797013819412626,
+              "sessions": 502,
+              "score_prev_high": 0.10914578476164215,
+              "score_peak": 0.1482723614466483,
+              "target_reached": false,
+              "model_buy_requests": 32,
+              "model_sell_requests": 97,
+              "model_hold_requests": 373,
+              "guard_overrides": 16,
+              "meaningful_model_trades": 75,
+              "mean_exposure": 0.8108000811177607,
+              "turnover": 19.879171286290358
+            }
+          }
+        ],
+        "config_hash": "559ab779581c2ebc22e8f7fdba71e9c582f72b64ba28aa50cd332956e2ba6432",
+        "algorithm": "maskable",
+        "data_hash": "a1609ca57d01dea1c14e2ee560d8477756e65923229012aab289c3b88042ec42",
+        "source_hash": "ce9a936c6f39236c598e78f656a4573f7a789c910e02e5babf04a02684a8bb23",
+        "artifacts": {
+          "last.zip": "8c45018df1e7163929a9e3e2048bf4844773c454895250d0a5ad8c685a46cfc4",
+          "last_vecnormalize.pkl": "69120a17a8ea01d4c5aaa4c5b533600526b8f531ea0e31e99f898e11f6f22cae",
+          "learning_curve.csv": "bafda645b050735dc3134db58bb2a7ae4a1e6c9d9fdc9bd2eba79ce4d52319e2"
+        }
+      },
+      "behavior_cloning": {
+        "split": "train_only",
+        "start": "2014-10-29",
+        "end": "2022-10-28",
+        "teacher": "flexible_expert",
+        "sampling": "natural/side-balanced mixture using BC_CLASS_POWER",
+        "rows": 3600,
+        "seed": 7,
+        "trajectories": [
+          [
+            "2014-10-29",
+            "2022-10-28"
+          ],
+          [
+            "2014-10-29",
+            "2016-10-21"
+          ],
+          [
+            "2015-10-29",
+            "2017-10-23"
+          ],
+          [
+            "2016-10-31",
+            "2018-10-24"
+          ],
+          [
+            "2017-10-31",
+            "2019-10-25"
+          ],
+          [
+            "2018-11-01",
+            "2020-10-27"
+          ],
+          [
+            "2019-11-04",
+            "2021-10-27"
+          ],
+          [
+            "2020-11-04",
+            "2022-10-28"
+          ]
+        ],
+        "class_counts": [
+          2805,
+          63,
+          19,
+          10,
+          9,
+          414,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          15,
+          3,
+          1,
+          4,
+          257
+        ],
+        "class_weights": [
+          0.34157687425613403,
+          2.2792115211486816,
+          4.0,
+          4.0,
+          4.0,
+          0.889108419418335,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          1.1284656524658203
+        ]
+      },
+      "train_optimization_peak": {
+        "assets": 114435.92994933351,
+        "date": "2020-04-30",
+        "rank": 6,
+        "episode": 2,
+        "transition": 215
+      },
+      "validation": {
+        "final_assets_close": 109501.48665240285,
+        "final_assets_prev_high": 109145.78476164215,
+        "peak_assets": 148272.36144664828,
+        "score": 0.10950148665240285,
+        "cagr": 0.046618805089055027,
+        "sharpe": 0.30017733945474306,
+        "max_drawdown": 0.30028596049609957,
+        "trades": 145,
+        "penalties": 0,
+        "total_fees": 79516.68514516143,
+        "cumulative_reward": 8.797013819412626,
+        "sessions": 502,
+        "score_prev_high": 0.10914578476164215,
+        "score_peak": 0.1482723614466483,
+        "target_reached": false,
+        "model_buy_requests": 32,
+        "model_sell_requests": 97,
+        "model_hold_requests": 373,
+        "guard_overrides": 16,
+        "meaningful_model_trades": 75,
+        "mean_exposure": 0.8108000811177607,
+        "turnover": 19.879171286290358
+      },
+      "validation_peak": {
+        "assets": 148272.36144664828,
+        "date": "2024-04-11"
+      },
+      "validation_proof": {
+        "training": false,
+        "deterministic": true,
+        "normalizer_unchanged": true,
+        "model_sha256": "8c45018df1e7163929a9e3e2048bf4844773c454895250d0a5ad8c685a46cfc4",
+        "normalizer_sha256": "69120a17a8ea01d4c5aaa4c5b533600526b8f531ea0e31e99f898e11f6f22cae",
+        "audit": {
+          "status": "passed",
+          "sessions": 502,
+          "final_assets": 109501.48665240285,
+          "executed_sells": {
+            "close": 0,
+            "avg": 0,
+            "high": 97
+          },
+          "checks": "21 actions, modes, fractions, causal Guard, fees, penalties, cash/shares, previous High, rewards, done"
+        }
+      },
+      "test": {
+        "final_assets_close": 683039.28297942,
+        "final_assets_prev_high": 714919.6956529244,
+        "peak_assets": 708225.2652126617,
+        "score": 0.6830392829794201,
+        "cagr": 1.6285798908912477,
+        "sharpe": 4.130662604145465,
+        "max_drawdown": 0.07521129848930341,
+        "trades": 139,
+        "penalties": 0,
+        "total_fees": 594641.6277104933,
+        "cumulative_reward": 192.0119096844772,
+        "sessions": 501,
+        "score_prev_high": 0.7149196956529243,
+        "score_peak": 0.7082252652126617,
+        "target_reached": false,
+        "model_buy_requests": 68,
+        "model_sell_requests": 68,
+        "model_hold_requests": 365,
+        "guard_overrides": 3,
+        "meaningful_model_trades": 136,
+        "mean_exposure": 0.5722356885416324,
+        "turnover": 148.6604069276233,
+        "profit": 583039.28297942,
+        "total_return_pct": 583.03928297942
+      },
+      "test_peak": {
+        "assets": 708225.2652126617,
+        "date": "2026-10-28"
+      },
+      "test_proof": {
+        "kind": "csv_summary",
+        "source": "logs/assets_test.csv",
+        "audit": {
+          "status": "passed",
+          "scope": "test_csv_arithmetic",
+          "sessions": 501,
+          "final_assets": 683039.28297942,
+          "checks": [
+            "assets",
+            "cash_flow",
+            "shares_fractions",
+            "fees",
+            "asset_change",
+            "reward",
+            "cumulative_reward",
+            "guard_flags",
+            "peak_flags",
+            "step_sequence"
+          ]
+        }
+      }
+    },
+    {
+      "run": 9,
+      "seed": 8,
+      "model_dir": "run_09",
+      "training": {
+        "status": "complete",
+        "seed": 8,
+        "start": "2014-10-29",
+        "end": "2022-10-28",
+        "validation": [
+          "2022-10-31",
+          "2024-10-29"
+        ],
+        "requested_timesteps": 32768,
+        "actual_timesteps": 32768,
+        "best_checkpoint_steps": 32768,
+        "validation_metrics": {
+          "final_assets_close": 208514.0383817297,
+          "final_assets_prev_high": 207836.58890094387,
+          "peak_assets": 218533.81163958772,
+          "score": 0.20851403838172972,
+          "cagr": 0.4461168198832892,
+          "sharpe": 1.3195533594812368,
+          "max_drawdown": 0.19638680189770252,
+          "trades": 28,
+          "penalties": 0,
+          "total_fees": 3846.1538459731096,
+          "cumulative_reward": 73.17813037081297,
+          "sessions": 502,
+          "score_prev_high": 0.20783658890094386,
+          "score_peak": 0.2185338116395877,
+          "target_reached": false,
+          "model_buy_requests": 3,
+          "model_sell_requests": 0,
+          "model_hold_requests": 499,
+          "guard_overrides": 25,
+          "meaningful_model_trades": 3,
+          "mean_exposure": 0.9875442023161256,
+          "turnover": 0.9615384614932773
+        },
+        "validation_checkpoints": [
+          {
+            "timesteps": 16384,
+            "metrics": {
+              "final_assets_close": 113443.30311799828,
+              "final_assets_prev_high": 113074.7967263561,
+              "peak_assets": 161775.09914422338,
+              "score": 0.11344330311799827,
+              "cagr": 0.06536531381112876,
+              "sharpe": 0.3568899656401794,
+              "max_drawdown": 0.33560311507707197,
+              "trades": 84,
+              "penalties": 0,
+              "total_fees": 64568.25843210445,
+              "cumulative_reward": 12.30133842397743,
+              "sessions": 502,
+              "score_prev_high": 0.1130747967263561,
+              "score_peak": 0.1617750991442234,
+              "target_reached": false,
+              "model_buy_requests": 24,
+              "model_sell_requests": 41,
+              "model_hold_requests": 437,
+              "guard_overrides": 19,
+              "meaningful_model_trades": 52,
+              "mean_exposure": 0.9208166841074777,
+              "turnover": 16.142064608026114
+            }
+          },
+          {
+            "timesteps": 32768,
+            "metrics": {
+              "final_assets_close": 208514.0383817297,
+              "final_assets_prev_high": 207836.58890094387,
+              "peak_assets": 218533.81163958772,
+              "score": 0.20851403838172972,
+              "cagr": 0.4461168198832892,
+              "sharpe": 1.3195533594812368,
+              "max_drawdown": 0.19638680189770252,
+              "trades": 28,
+              "penalties": 0,
+              "total_fees": 3846.1538459731096,
+              "cumulative_reward": 73.17813037081297,
+              "sessions": 502,
+              "score_prev_high": 0.20783658890094386,
+              "score_peak": 0.2185338116395877,
+              "target_reached": false,
+              "model_buy_requests": 3,
+              "model_sell_requests": 0,
+              "model_hold_requests": 499,
+              "guard_overrides": 25,
+              "meaningful_model_trades": 3,
+              "mean_exposure": 0.9875442023161256,
+              "turnover": 0.9615384614932773
+            }
+          }
+        ],
+        "config_hash": "559ab779581c2ebc22e8f7fdba71e9c582f72b64ba28aa50cd332956e2ba6432",
+        "algorithm": "maskable",
+        "data_hash": "a1609ca57d01dea1c14e2ee560d8477756e65923229012aab289c3b88042ec42",
+        "source_hash": "ce9a936c6f39236c598e78f656a4573f7a789c910e02e5babf04a02684a8bb23",
+        "artifacts": {
+          "last.zip": "e6db7001d3b32111bce375a0bca3782b1d0d21c9d9a8626860ce0be22b5e467d",
+          "last_vecnormalize.pkl": "1230e95d6b67150e636e7d0a3ee7ebfc355206026017e9ceda2f35b0e0b1f445",
+          "learning_curve.csv": "c8fcc5d73f922248e2534eda1643a1b76418573ad32da6189004d34c808d1a89"
+        }
+      },
+      "behavior_cloning": {
+        "split": "train_only",
+        "start": "2014-10-29",
+        "end": "2022-10-28",
+        "teacher": "flexible_expert",
+        "sampling": "natural/side-balanced mixture using BC_CLASS_POWER",
+        "rows": 3600,
+        "seed": 8,
+        "trajectories": [
+          [
+            "2014-10-29",
+            "2022-10-28"
+          ],
+          [
+            "2014-10-29",
+            "2016-10-21"
+          ],
+          [
+            "2015-10-29",
+            "2017-10-23"
+          ],
+          [
+            "2016-10-31",
+            "2018-10-24"
+          ],
+          [
+            "2017-10-31",
+            "2019-10-25"
+          ],
+          [
+            "2018-11-01",
+            "2020-10-27"
+          ],
+          [
+            "2019-11-04",
+            "2021-10-27"
+          ],
+          [
+            "2020-11-04",
+            "2022-10-28"
+          ]
+        ],
+        "class_counts": [
+          2805,
+          63,
+          19,
+          10,
+          9,
+          414,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          15,
+          3,
+          1,
+          4,
+          257
+        ],
+        "class_weights": [
+          0.34157687425613403,
+          2.2792115211486816,
+          4.0,
+          4.0,
+          4.0,
+          0.889108419418335,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          1.1284656524658203
+        ]
+      },
+      "train_optimization_peak": {
+        "assets": 114408.72882705912,
+        "date": "2015-11-11",
+        "rank": 2,
+        "episode": 9,
+        "transition": 28283
+      },
+      "validation": {
+        "final_assets_close": 208514.0383817297,
+        "final_assets_prev_high": 207836.58890094387,
+        "peak_assets": 218533.81163958772,
+        "score": 0.20851403838172972,
+        "cagr": 0.4461168198832892,
+        "sharpe": 1.3195533594812368,
+        "max_drawdown": 0.19638680189770252,
+        "trades": 28,
+        "penalties": 0,
+        "total_fees": 3846.1538459731096,
+        "cumulative_reward": 73.17813037081297,
+        "sessions": 502,
+        "score_prev_high": 0.20783658890094386,
+        "score_peak": 0.2185338116395877,
+        "target_reached": false,
+        "model_buy_requests": 3,
+        "model_sell_requests": 0,
+        "model_hold_requests": 499,
+        "guard_overrides": 25,
+        "meaningful_model_trades": 3,
+        "mean_exposure": 0.9875442023161256,
+        "turnover": 0.9615384614932773
+      },
+      "validation_peak": {
+        "assets": 218533.81163958772,
+        "date": "2024-07-02"
+      },
+      "validation_proof": {
+        "training": false,
+        "deterministic": true,
+        "normalizer_unchanged": true,
+        "model_sha256": "e6db7001d3b32111bce375a0bca3782b1d0d21c9d9a8626860ce0be22b5e467d",
+        "normalizer_sha256": "1230e95d6b67150e636e7d0a3ee7ebfc355206026017e9ceda2f35b0e0b1f445",
+        "audit": {
+          "status": "passed",
+          "sessions": 502,
+          "final_assets": 208514.0383817297,
+          "executed_sells": {
+            "close": 0,
+            "avg": 0,
+            "high": 0
+          },
+          "checks": "21 actions, modes, fractions, causal Guard, fees, penalties, cash/shares, previous High, rewards, done"
+        }
+      },
+      "test": {
+        "final_assets_close": 919870.8970464368,
+        "final_assets_prev_high": 962709.1499369523,
+        "peak_assets": 952874.7124569376,
+        "score": 0.9198708970464368,
+        "cagr": 2.053154975233,
+        "sharpe": 4.829317988791163,
+        "max_drawdown": 0.03827551356495029,
+        "trades": 158,
+        "penalties": 0,
+        "total_fees": 858854.7272682348,
+        "cumulative_reward": 221.80801858544655,
+        "sessions": 501,
+        "score_prev_high": 0.9627091499369522,
+        "score_peak": 0.9528747124569377,
+        "target_reached": false,
+        "model_buy_requests": 76,
+        "model_sell_requests": 79,
+        "model_hold_requests": 346,
+        "guard_overrides": 3,
+        "meaningful_model_trades": 155,
+        "mean_exposure": 0.5337200284571738,
+        "turnover": 214.71368181705873,
+        "profit": 819870.8970464368,
+        "total_return_pct": 819.8708970464369
+      },
+      "test_peak": {
+        "assets": 952874.7124569376,
+        "date": "2026-10-28"
+      },
+      "test_proof": {
+        "kind": "csv_summary",
+        "source": "logs/assets_test.csv",
+        "audit": {
+          "status": "passed",
+          "scope": "test_csv_arithmetic",
+          "sessions": 501,
+          "final_assets": 919870.8970464368,
+          "checks": [
+            "assets",
+            "cash_flow",
+            "shares_fractions",
+            "fees",
+            "asset_change",
+            "reward",
+            "cumulative_reward",
+            "guard_flags",
+            "peak_flags",
+            "step_sequence"
+          ]
+        }
+      }
+    },
+    {
+      "run": 10,
+      "seed": 9,
+      "model_dir": "run_10",
+      "training": {
+        "status": "complete",
+        "seed": 9,
+        "start": "2014-10-29",
+        "end": "2022-10-28",
+        "validation": [
+          "2022-10-31",
+          "2024-10-29"
+        ],
+        "requested_timesteps": 32768,
+        "actual_timesteps": 32768,
+        "best_checkpoint_steps": 32768,
+        "validation_metrics": {
+          "final_assets_close": 183524.3030706028,
+          "final_assets_prev_high": 182928.0437261821,
+          "peak_assets": 192343.2388075406,
+          "score": 0.1835243030706028,
+          "cagr": 0.35635095585799825,
+          "sharpe": 1.1034917252044707,
+          "max_drawdown": 0.21300449633600538,
+          "trades": 29,
+          "penalties": 0,
+          "total_fees": 3846.1538460652127,
+          "cumulative_reward": 60.400498159672786,
+          "sessions": 502,
+          "score_prev_high": 0.1829280437261821,
+          "score_peak": 0.1923432388075406,
+          "target_reached": false,
+          "model_buy_requests": 3,
+          "model_sell_requests": 0,
+          "model_hold_requests": 499,
+          "guard_overrides": 26,
+          "meaningful_model_trades": 3,
+          "mean_exposure": 0.9994689043947748,
+          "turnover": 0.9615384615163032
+        },
+        "validation_checkpoints": [
+          {
+            "timesteps": 16384,
+            "metrics": {
+              "final_assets_close": 148512.92707183675,
+              "final_assets_prev_high": 148030.42742316617,
+              "peak_assets": 181835.2625882609,
+              "score": 0.14851292707183675,
+              "cagr": 0.21961930132938656,
+              "sharpe": 0.7781125594660484,
+              "max_drawdown": 0.3108271376642122,
+              "trades": 54,
+              "penalties": 0,
+              "total_fees": 29105.239176967247,
+              "cumulative_reward": 39.24146073767942,
+              "sessions": 502,
+              "score_prev_high": 0.14803042742316616,
+              "score_peak": 0.1818352625882609,
+              "target_reached": false,
+              "model_buy_requests": 11,
+              "model_sell_requests": 20,
+              "model_hold_requests": 471,
+              "guard_overrides": 23,
+              "meaningful_model_trades": 24,
+              "mean_exposure": 0.9608698863147289,
+              "turnover": 7.276309794241813
+            }
+          },
+          {
+            "timesteps": 32768,
+            "metrics": {
+              "final_assets_close": 183524.3030706028,
+              "final_assets_prev_high": 182928.0437261821,
+              "peak_assets": 192343.2388075406,
+              "score": 0.1835243030706028,
+              "cagr": 0.35635095585799825,
+              "sharpe": 1.1034917252044707,
+              "max_drawdown": 0.21300449633600538,
+              "trades": 29,
+              "penalties": 0,
+              "total_fees": 3846.1538460652127,
+              "cumulative_reward": 60.400498159672786,
+              "sessions": 502,
+              "score_prev_high": 0.1829280437261821,
+              "score_peak": 0.1923432388075406,
+              "target_reached": false,
+              "model_buy_requests": 3,
+              "model_sell_requests": 0,
+              "model_hold_requests": 499,
+              "guard_overrides": 26,
+              "meaningful_model_trades": 3,
+              "mean_exposure": 0.9994689043947748,
+              "turnover": 0.9615384615163032
+            }
+          }
+        ],
+        "config_hash": "559ab779581c2ebc22e8f7fdba71e9c582f72b64ba28aa50cd332956e2ba6432",
+        "algorithm": "maskable",
+        "data_hash": "a1609ca57d01dea1c14e2ee560d8477756e65923229012aab289c3b88042ec42",
+        "source_hash": "ce9a936c6f39236c598e78f656a4573f7a789c910e02e5babf04a02684a8bb23",
+        "artifacts": {
+          "last.zip": "3e25ee0293df5d809747d8504e62956a951a57afc67486ade17b7e32af0ff9cd",
+          "last_vecnormalize.pkl": "42177208e441983352ed09f9d85a16bca1abd6148bf0ca3e87e268dcb48d33d1",
+          "learning_curve.csv": "be54c2551ce42aea1a3c7fedf21b19a542043825656b621782ee2a8d014a3331"
+        }
+      },
+      "behavior_cloning": {
+        "split": "train_only",
+        "start": "2014-10-29",
+        "end": "2022-10-28",
+        "teacher": "flexible_expert",
+        "sampling": "natural/side-balanced mixture using BC_CLASS_POWER",
+        "rows": 3600,
+        "seed": 9,
+        "trajectories": [
+          [
+            "2014-10-29",
+            "2022-10-28"
+          ],
+          [
+            "2014-10-29",
+            "2016-10-21"
+          ],
+          [
+            "2015-10-29",
+            "2017-10-23"
+          ],
+          [
+            "2016-10-31",
+            "2018-10-24"
+          ],
+          [
+            "2017-10-31",
+            "2019-10-25"
+          ],
+          [
+            "2018-11-01",
+            "2020-10-27"
+          ],
+          [
+            "2019-11-04",
+            "2021-10-27"
+          ],
+          [
+            "2020-11-04",
+            "2022-10-28"
+          ]
+        ],
+        "class_counts": [
+          2805,
+          63,
+          19,
+          10,
+          9,
+          414,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          15,
+          3,
+          1,
+          4,
+          257
+        ],
+        "class_weights": [
+          0.34157687425613403,
+          2.2792115211486816,
+          4.0,
+          4.0,
+          4.0,
+          0.889108419418335,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          1.1284656524658203
+        ]
+      },
+      "train_optimization_peak": {
+        "assets": 116885.17895812794,
+        "date": "2015-07-24",
+        "rank": 0,
+        "episode": 6,
+        "transition": 16089
+      },
+      "validation": {
+        "final_assets_close": 183524.3030706028,
+        "final_assets_prev_high": 182928.0437261821,
+        "peak_assets": 192343.2388075406,
+        "score": 0.1835243030706028,
+        "cagr": 0.35635095585799825,
+        "sharpe": 1.1034917252044707,
+        "max_drawdown": 0.21300449633600538,
+        "trades": 29,
+        "penalties": 0,
+        "total_fees": 3846.1538460652127,
+        "cumulative_reward": 60.400498159672786,
+        "sessions": 502,
+        "score_prev_high": 0.1829280437261821,
+        "score_peak": 0.1923432388075406,
+        "target_reached": false,
+        "model_buy_requests": 3,
+        "model_sell_requests": 0,
+        "model_hold_requests": 499,
+        "guard_overrides": 26,
+        "meaningful_model_trades": 3,
+        "mean_exposure": 0.9994689043947748,
+        "turnover": 0.9615384615163032
+      },
+      "validation_peak": {
+        "assets": 192343.2388075406,
+        "date": "2024-07-02"
+      },
+      "validation_proof": {
+        "training": false,
+        "deterministic": true,
+        "normalizer_unchanged": true,
+        "model_sha256": "3e25ee0293df5d809747d8504e62956a951a57afc67486ade17b7e32af0ff9cd",
+        "normalizer_sha256": "42177208e441983352ed09f9d85a16bca1abd6148bf0ca3e87e268dcb48d33d1",
+        "audit": {
+          "status": "passed",
+          "sessions": 502,
+          "final_assets": 183524.3030706028,
+          "executed_sells": {
+            "close": 0,
+            "avg": 0,
+            "high": 0
+          },
+          "checks": "21 actions, modes, fractions, causal Guard, fees, penalties, cash/shares, previous High, rewards, done"
+        }
+      },
+      "test": {
+        "final_assets_close": 885338.1246895387,
+        "final_assets_prev_high": 926568.1914323259,
+        "peak_assets": 917102.9474984624,
+        "score": 0.8853381246895388,
+        "cagr": 1.9949545722481905,
+        "sharpe": 4.757027721595751,
+        "max_drawdown": 0.03827445216830738,
+        "trades": 157,
+        "penalties": 0,
+        "total_fees": 823314.6336313115,
+        "cumulative_reward": 217.97904730873708,
+        "sessions": 501,
+        "score_prev_high": 0.9265681914323258,
+        "score_peak": 0.9171029474984624,
+        "target_reached": false,
+        "model_buy_requests": 75,
+        "model_sell_requests": 79,
+        "model_hold_requests": 347,
+        "guard_overrides": 3,
+        "meaningful_model_trades": 154,
+        "mean_exposure": 0.5347639058439563,
+        "turnover": 205.82865840782785,
+        "profit": 785338.1246895387,
+        "total_return_pct": 785.3381246895387
+      },
+      "test_peak": {
+        "assets": 917102.9474984624,
+        "date": "2026-10-28"
+      },
+      "test_proof": {
+        "kind": "csv_summary",
+        "source": "logs/assets_test.csv",
+        "audit": {
+          "status": "passed",
+          "scope": "test_csv_arithmetic",
+          "sessions": 501,
+          "final_assets": 885338.1246895387,
+          "checks": [
+            "assets",
+            "cash_flow",
+            "shares_fractions",
+            "fees",
+            "asset_change",
+            "reward",
+            "cumulative_reward",
+            "guard_flags",
+            "peak_flags",
+            "step_sequence"
+          ]
+        }
+      }
+    }
+  ],
+  "selection": {
+    "run": 9,
+    "seed": 8,
+    "criterion": "validation final assets descending; drawdown ascending; seed ascending",
+    "locked_at": "2026-10-31T06:01:08.337978+00:00",
+    "model_hashes": {
+      "run_01/agent.zip": "d4711950b759cfe7ceab2066263680cf0e20edadbc8cccc01ccbdfdfaba0c478",
+      "run_01/normalizer.pkl": "3e9dda5eddaa42922d5404f47f4cca740184df297939ec8764bd9e6d13634c90",
+      "run_02/agent.zip": "9e1d4aa641ecf8463fdd56a84d5c88584f46ae168f23baf12e9c2d880d2dab9d",
+      "run_02/normalizer.pkl": "1265fa9e6bc05b7c457afaa28fbf838f5bde1cda642bedd4072366fe013a52e2",
+      "run_03/agent.zip": "624c931f510f9237a68b6c6bf081ce0d6c886ba2db2c1465b91cf599594c6968",
+      "run_03/normalizer.pkl": "f1694863fead1c71b6f58d380c94341f24ad165af94343ce8fe3c2e7ca9dbca5",
+      "run_04/agent.zip": "a7eeb21e3e162b86dbdc02cdb0b6b0ef92d19b1dbea2706c8f49b2ae599167e6",
+      "run_04/normalizer.pkl": "cfe5139f8fa3bad8261ca15705eafdb25f8a663dac8876acaa483eb38a7470f9",
+      "run_05/agent.zip": "0d905c93a9a617ec479521cb9ad646341626d864d5468f67eeff6cb94dbf4228",
+      "run_05/normalizer.pkl": "653aa11fa8bba84894aa922d16ea511ee0e676072af4170032b7fe34beb77edc",
+      "run_06/agent.zip": "d266faf15aec745ef1ab66fdc44f960c3e4dc76017d58758da8ab9178c07437a",
+      "run_06/normalizer.pkl": "e78a39ab5585095fa9cd93728fc2b7fa40c8a0c18c1f6da48719d7929f1597e7",
+      "run_07/agent.zip": "2ed59c304607438ca20e2dce448806389ac2e4f9643100a3bf5e84509a51a78c",
+      "run_07/normalizer.pkl": "6f647539826146d509ff486846f2d9fad3a994729823328fa8dfc18ad542162b",
+      "run_08/agent.zip": "8c45018df1e7163929a9e3e2048bf4844773c454895250d0a5ad8c685a46cfc4",
+      "run_08/normalizer.pkl": "69120a17a8ea01d4c5aaa4c5b533600526b8f531ea0e31e99f898e11f6f22cae",
+      "run_09/agent.zip": "e6db7001d3b32111bce375a0bca3782b1d0d21c9d9a8626860ce0be22b5e467d",
+      "run_09/normalizer.pkl": "1230e95d6b67150e636e7d0a3ee7ebfc355206026017e9ceda2f35b0e0b1f445",
+      "run_10/agent.zip": "3e25ee0293df5d809747d8504e62956a951a57afc67486ade17b7e32af0ff9cd",
+      "run_10/normalizer.pkl": "42177208e441983352ed09f9d85a16bca1abd6148bf0ca3e87e268dcb48d33d1"
+    }
+  },
+  "selection_sha256": "7af677f7890e03eac6679efb7d71eaaf5345f97379c1e7b3c8a4a16f40e40000",
+  "effective_config": {
+    "EXPERIMENT_VERSION": 10,
+    "INIT_CASH": 100000,
+    "WIN": 1000000,
+    "TOTAL_ASSETS_FLOOR": 1000,
+    "CASH_FLOOR": -5000,
+    "BUY_MIN": 0.49,
+    "BUY_MAX": 0.83,
+    "SELL_MIN": 0.21,
+    "SELL_MAX": 0.69,
+    "BUY_FRACTIONS": [
+      0.49,
+      0.58,
+      0.66,
+      0.75,
+      0.83
+    ],
+    "SELL_FRACTIONS": [
+      0.21,
+      0.33,
+      0.45,
+      0.57,
+      0.69
+    ],
+    "FEE": 0.04,
+    "TRANSACTION_SESSION": 19,
+    "TRANSACTION_PENALTY": 3751,
+    "SELL_PRICE_MODE": "high",
+    "FRACTIONAL_SHARES": true,
+    "MIN_TRADE_VALUE": 0,
+    "PENALTY_GUARD": true,
+    "WINDOW": 30,
+    "EPISODE_LEN": 500,
+    "SEEDS": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "DATA": {
+      "SYMBOL": "AMZN",
+      "START": "2011-01-03",
+      "TRAIN_START": "2014-10-29",
+      "TRAIN_END": "2022-10-28",
+      "TEST_START": "2024-10-30",
+      "TEST_END": "2026-10-29",
+      "ADJUSTED_LOCAL": true,
+      "CROSSCHECK_TOLERANCE": 0.01,
+      "CROSSCHECK_WARNING_MONTHS": 2,
+      "RETURN_WARNING": 0.25,
+      "TRADING_DAYS": 252,
+      "REQUIRE_COMPLETE_RANGE": true
+    },
+    "FEATURES": {
+      "Z_WINDOW": 252,
+      "Z_MIN_PERIODS": 20,
+      "CLIP": 5,
+      "EPSILON": 1e-08,
+      "RSI_PERIOD": 14,
+      "MACD_FAST": 12,
+      "MACD_SLOW": 26,
+      "BOLLINGER_PERIOD": 20,
+      "BOLLINGER_STD": 2,
+      "ATR_PERIOD": 14,
+      "SMA_PERIODS": [
+        5,
+        10,
+        20,
+        50,
+        200
+      ],
+      "VOL_PERIOD": 20,
+      "INCLUDE_SMA": true,
+      "INCLUDE_MACD": true,
+      "INCLUDE_RSI": true,
+      "MOMENTUM_PERIODS": [
+        5,
+        20,
+        60
+      ],
+      "DOWNSIDE_PERIOD": 20,
+      "REGIME_FEATURES": true
+    },
+    "REWARD": {
+      "LOG_SCALE": 100,
+      "EXCESS": 0.0,
+      "DRAWDOWN": 0.1,
+      "TRADE": 0.0,
+      "INVALID": 1,
+      "WIN": 200,
+      "LOSS": -100
+    },
+    "BASELINES": {
+      "BUY_HOLD_INITIAL_DAYS": 3,
+      "SMA_FAST": 20,
+      "SMA_SLOW": 50,
+      "MOMENTUM_DAYS": 60
+    },
+    "ORACLE": {
+      "BEAM_WIDTH": 512,
+      "RANKING": "lookahead"
+    },
+    "TRAIN": {
+      "ALGORITHM": "maskable",
+      "ARCHITECTURE": "state_mlp",
+      "NET_ARCH": [
+        64,
+        64
+      ],
+      "GRU_HIDDEN": 128,
+      "TCN_CHANNELS": [
+        32,
+        32,
+        64
+      ],
+      "TCN_KERNEL": 3,
+      "TCN_DILATIONS": [
+        1,
+        2,
+        4
+      ],
+      "N_ENVS": 8,
+      "LEARNING_RATE": 0.0002,
+      "N_STEPS": 512,
+      "BATCH_SIZE": 256,
+      "N_EPOCHS": 5,
+      "GAMMA": 0.9995,
+      "GAE_LAMBDA": 0.98,
+      "CLIP_RANGE": 0.2,
+      "TARGET_KL": 0.04,
+      "MAX_GRAD_NORM": 0.5,
+      "HOLD_BIAS": 0.0,
+      "ENT_START": 0.025,
+      "ENT_END": 0.002,
+      "TOTAL_TIMESTEPS": 32768,
+      "EVAL_FREQ": 16384,
+      "DEVICE": "auto",
+      "TORCH_THREADS": 1,
+      "VALIDATION_START": null,
+      "OFFICIAL_POLICY": "validation_best_seed",
+      "BC_ENABLED": true,
+      "BC_EPOCHS": 16,
+      "BC_BATCH_SIZE": 256,
+      "BC_LR": 0.0003,
+      "GUIDANCE_ENABLED": true,
+      "GUIDANCE_START": 0.02,
+      "GUIDANCE_END": 0.0,
+      "GUIDANCE_BATCH_SIZE": 128,
+      "GUIDANCE_INTERVAL": 4,
+      "STATE_HIDDEN": 64,
+      "BUY_BIAS": 1.0,
+      "NORM_REWARD": true,
+      "VF_COEF": 0.25,
+      "MIN_LR_FRACTION": 0.1,
+      "BC_TRAJECTORIES": 8,
+      "BC_EPISODE_LEN": 500,
+      "BC_CLASS_POWER": 0.5,
+      "VALIDATION_MIN_MODEL_TRADES": 1,
+      "PORTFOLIO_PRIOR": true,
+      "CASH_PRIOR_SCALE": 0.02,
+      "CASH_PRIOR_STRENGTH": 1.5,
+      "VALIDATION_MIN_EXPOSURE": 0.25,
+      "BC_TEACHER": "flexible_expert",
+      "COST_PRIOR_STRENGTH": 5,
+      "SELL_BIAS": 0.25,
+      "VALIDATION_STARTS": [],
+      "VALIDATION_RANGES": [],
+      "TRACK_INTRATRAIN_PEAKS": true,
+      "TRACK_ALL_ASSETS": true
+    },
+    "TUNE": {
+      "DD_PENALTY": 0,
+      "TRADE_PENALTY": 0
+    },
+    "DYNAMIC_SELL_PRICES": true,
+    "BENCHMARK_SELL_PRICE_MODE": "high",
+    "BUY_PRICE_MODE": "low",
+    "FIXED_SELL_PRICE": "high",
+    "VALIDATION": {
+      "FIT_START": "2014-10-29",
+      "START": "2022-10-31",
+      "TIMESTEPS": 131072,
+      "RANGES": [
+        [
+          "2022-10-31",
+          "2023-10-30"
+        ],
+        [
+          "2023-10-31",
+          "2024-10-29"
+        ]
+      ]
+    },
+    "RISK_PROFILES": [
+      {
+        "name": "risk_1",
+        "hold_penalty": 0.25,
+        "sell_boost": 0.1,
+        "entropy_multiplier": 2
+      },
+      {
+        "name": "risk_2",
+        "hold_penalty": 0.6,
+        "sell_boost": 0.25,
+        "entropy_multiplier": 3
+      },
+      {
+        "name": "risk_3",
+        "hold_penalty": 1.0,
+        "sell_boost": 0.4,
+        "entropy_multiplier": 4
+      },
+      {
+        "name": "risk_4",
+        "hold_penalty": 1.4,
+        "sell_boost": 0.55,
+        "entropy_multiplier": 5
+      },
+      {
+        "name": "risk_5",
+        "hold_penalty": 1.8,
+        "sell_boost": 0.7,
+        "entropy_multiplier": 6
+      }
+    ],
+    "RISK": {
+      "name": "risk_2",
+      "hold_penalty": 0.6,
+      "sell_boost": 0.25,
+      "entropy_multiplier": 3
+    },
+    "RUN_STAGE": "optimization"
+  },
+  "protocol": {
+    "fit_start": "2014-10-29",
+    "fit_end": "2022-10-28",
+    "validation_start": "2022-10-31",
+    "validation_end": "2024-10-29",
+    "test_start": "2024-10-30",
+    "test_end": "2026-10-29",
+    "fresh_training_runs": 10,
+    "test_performance_runs": 10,
+    "training_timesteps_per_run": 32768,
+    "total_training_timesteps": 327680,
+    "test_started_at": "2026-10-31T06:01:27.530002+00:00",
+    "test_previously_used": true,
+    "test_best_is_exploratory": true,
+    "checkpoint_selection": "validation only at EVAL_FREQ and final update",
+    "test_result_kind": "test_csv"
+  },
+  "business_rules_unchanged": true,
+  "config_sha256": "a5f11b3c3f982ed0147b5ffe2907d0335690f00fa7c0a6d90604cbab655cb1fb",
+  "training_source_hash": "ce9a936c6f39236c598e78f656a4573f7a789c910e02e5babf04a02684a8bb23",
+  "market_sha256": "55830604344e77be43ec4e744bffbd6e7549684805d2d1848fc57c9ed57450ff",
+  "training": {
+    "status": "complete",
+    "seed": 8,
+    "start": "2014-10-29",
+    "end": "2022-10-28",
+    "validation": [
+      "2022-10-31",
+      "2024-10-29"
+    ],
+    "requested_timesteps": 32768,
+    "actual_timesteps": 32768,
+    "best_checkpoint_steps": 32768,
+    "validation_metrics": {
+      "final_assets_close": 208514.0383817297,
+      "final_assets_prev_high": 207836.58890094387,
+      "peak_assets": 218533.81163958772,
+      "score": 0.20851403838172972,
+      "cagr": 0.4461168198832892,
+      "sharpe": 1.3195533594812368,
+      "max_drawdown": 0.19638680189770252,
+      "trades": 28,
+      "penalties": 0,
+      "total_fees": 3846.1538459731096,
+      "cumulative_reward": 73.17813037081297,
+      "sessions": 502,
+      "score_prev_high": 0.20783658890094386,
+      "score_peak": 0.2185338116395877,
+      "target_reached": false,
+      "model_buy_requests": 3,
+      "model_sell_requests": 0,
+      "model_hold_requests": 499,
+      "guard_overrides": 25,
+      "meaningful_model_trades": 3,
+      "mean_exposure": 0.9875442023161256,
+      "turnover": 0.9615384614932773
+    },
+    "validation_checkpoints": [
+      {
+        "timesteps": 16384,
+        "metrics": {
+          "final_assets_close": 113443.30311799828,
+          "final_assets_prev_high": 113074.7967263561,
+          "peak_assets": 161775.09914422338,
+          "score": 0.11344330311799827,
+          "cagr": 0.06536531381112876,
+          "sharpe": 0.3568899656401794,
+          "max_drawdown": 0.33560311507707197,
+          "trades": 84,
+          "penalties": 0,
+          "total_fees": 64568.25843210445,
+          "cumulative_reward": 12.30133842397743,
+          "sessions": 502,
+          "score_prev_high": 0.1130747967263561,
+          "score_peak": 0.1617750991442234,
+          "target_reached": false,
+          "model_buy_requests": 24,
+          "model_sell_requests": 41,
+          "model_hold_requests": 437,
+          "guard_overrides": 19,
+          "meaningful_model_trades": 52,
+          "mean_exposure": 0.9208166841074777,
+          "turnover": 16.142064608026114
+        }
+      },
+      {
+        "timesteps": 32768,
+        "metrics": {
+          "final_assets_close": 208514.0383817297,
+          "final_assets_prev_high": 207836.58890094387,
+          "peak_assets": 218533.81163958772,
+          "score": 0.20851403838172972,
+          "cagr": 0.4461168198832892,
+          "sharpe": 1.3195533594812368,
+          "max_drawdown": 0.19638680189770252,
+          "trades": 28,
+          "penalties": 0,
+          "total_fees": 3846.1538459731096,
+          "cumulative_reward": 73.17813037081297,
+          "sessions": 502,
+          "score_prev_high": 0.20783658890094386,
+          "score_peak": 0.2185338116395877,
+          "target_reached": false,
+          "model_buy_requests": 3,
+          "model_sell_requests": 0,
+          "model_hold_requests": 499,
+          "guard_overrides": 25,
+          "meaningful_model_trades": 3,
+          "mean_exposure": 0.9875442023161256,
+          "turnover": 0.9615384614932773
+        }
+      }
+    ],
+    "config_hash": "559ab779581c2ebc22e8f7fdba71e9c582f72b64ba28aa50cd332956e2ba6432",
+    "algorithm": "maskable",
+    "data_hash": "a1609ca57d01dea1c14e2ee560d8477756e65923229012aab289c3b88042ec42",
+    "source_hash": "ce9a936c6f39236c598e78f656a4573f7a789c910e02e5babf04a02684a8bb23",
+    "artifacts": {
+      "last.zip": "e6db7001d3b32111bce375a0bca3782b1d0d21c9d9a8626860ce0be22b5e467d",
+      "last_vecnormalize.pkl": "1230e95d6b67150e636e7d0a3ee7ebfc355206026017e9ceda2f35b0e0b1f445",
+      "learning_curve.csv": "c8fcc5d73f922248e2534eda1643a1b76418573ad32da6189004d34c808d1a89"
+    }
+  },
+  "behavior_cloning": {
+    "split": "train_only",
+    "start": "2014-10-29",
+    "end": "2022-10-28",
+    "teacher": "flexible_expert",
+    "sampling": "natural/side-balanced mixture using BC_CLASS_POWER",
+    "rows": 3600,
+    "seed": 8,
+    "trajectories": [
+      [
+        "2014-10-29",
+        "2022-10-28"
+      ],
+      [
+        "2014-10-29",
+        "2016-10-21"
+      ],
+      [
+        "2015-10-29",
+        "2017-10-23"
+      ],
+      [
+        "2016-10-31",
+        "2018-10-24"
+      ],
+      [
+        "2017-10-31",
+        "2019-10-25"
+      ],
+      [
+        "2018-11-01",
+        "2020-10-27"
+      ],
+      [
+        "2019-11-04",
+        "2021-10-27"
+      ],
+      [
+        "2020-11-04",
+        "2022-10-28"
+      ]
+    ],
+    "class_counts": [
+      2805,
+      63,
+      19,
+      10,
+      9,
+      414,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      15,
+      3,
+      1,
+      4,
+      257
+    ],
+    "class_weights": [
+      0.34157687425613403,
+      2.2792115211486816,
+      4.0,
+      4.0,
+      4.0,
+      0.889108419418335,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      1.1284656524658203
+    ]
+  },
+  "train_optimization_peak": {
+    "assets": 114408.72882705912,
+    "date": "2015-11-11",
+    "rank": 2,
+    "episode": 9,
+    "transition": 28283
+  },
+  "train_replay": {
+    "final_assets_close": 1025351.3719969993,
+    "final_assets_prev_high": 995073.7077183988,
+    "peak_assets": 1025351.3719969993,
+    "score": 1.0253513719969993,
+    "cagr": 0.505798533899201,
+    "sharpe": 1.5550944832282747,
+    "max_drawdown": 0.282429432201201,
+    "trades": 196,
+    "penalties": 0,
+    "total_fees": 343394.325767962,
+    "cumulative_reward": 432.07174020560194,
+    "sessions": 1433,
+    "score_prev_high": 0.9950737077183988,
+    "score_peak": 1.0253513719969993,
+    "target_reached": true,
+    "model_buy_requests": 51,
+    "model_sell_requests": 84,
+    "model_hold_requests": 1298,
+    "guard_overrides": 61,
+    "meaningful_model_trades": 101,
+    "mean_exposure": 0.9463596714467051,
+    "turnover": 85.84858144199049
+  },
+  "train_replay_peak": {
+    "assets": 1025351.3719969993,
+    "date": "2020-07-09"
+  },
+  "train_proof": {
+    "training": false,
+    "deterministic": true,
+    "normalizer_unchanged": true,
+    "model_sha256": "e6db7001d3b32111bce375a0bca3782b1d0d21c9d9a8626860ce0be22b5e467d",
+    "normalizer_sha256": "1230e95d6b67150e636e7d0a3ee7ebfc355206026017e9ceda2f35b0e0b1f445",
+    "audit": {
+      "status": "passed",
+      "sessions": 1433,
+      "final_assets": 1025351.3719969993,
+      "executed_sells": {
+        "close": 0,
+        "avg": 0,
+        "high": 84
+      },
+      "checks": "21 actions, modes, fractions, causal Guard, fees, penalties, cash/shares, previous High, rewards, done"
+    }
+  },
+  "validation": {
+    "final_assets_close": 208514.0383817297,
+    "final_assets_prev_high": 207836.58890094387,
+    "peak_assets": 218533.81163958772,
+    "score": 0.20851403838172972,
+    "cagr": 0.4461168198832892,
+    "sharpe": 1.3195533594812368,
+    "max_drawdown": 0.19638680189770252,
+    "trades": 28,
+    "penalties": 0,
+    "total_fees": 3846.1538459731096,
+    "cumulative_reward": 73.17813037081297,
+    "sessions": 502,
+    "score_prev_high": 0.20783658890094386,
+    "score_peak": 0.2185338116395877,
+    "target_reached": false,
+    "model_buy_requests": 3,
+    "model_sell_requests": 0,
+    "model_hold_requests": 499,
+    "guard_overrides": 25,
+    "meaningful_model_trades": 3,
+    "mean_exposure": 0.9875442023161256,
+    "turnover": 0.9615384614932773
+  },
+  "test": {
+    "final_assets_close": 919870.8970464368,
+    "final_assets_prev_high": 962709.1499369523,
+    "peak_assets": 952874.7124569376,
+    "score": 0.9198708970464368,
+    "cagr": 2.053154975233,
+    "sharpe": 4.829317988791163,
+    "max_drawdown": 0.03827551356495029,
+    "trades": 158,
+    "penalties": 0,
+    "total_fees": 858854.7272682348,
+    "cumulative_reward": 221.80801858544655,
+    "sessions": 501,
+    "score_prev_high": 0.9627091499369522,
+    "score_peak": 0.9528747124569377,
+    "target_reached": false,
+    "model_buy_requests": 76,
+    "model_sell_requests": 79,
+    "model_hold_requests": 346,
+    "guard_overrides": 3,
+    "meaningful_model_trades": 155,
+    "mean_exposure": 0.5337200284571738,
+    "turnover": 214.71368181705873,
+    "profit": 819870.8970464368,
+    "total_return_pct": 819.8708970464369
+  },
+  "test_peak": {
+    "assets": 952874.7124569376,
+    "date": "2026-10-28"
+  },
+  "test_proof": {
+    "kind": "csv_summary",
+    "source": "logs/assets_test.csv",
+    "audit": {
+      "status": "passed",
+      "scope": "test_csv_arithmetic",
+      "sessions": 501,
+      "final_assets": 919870.8970464368,
+      "checks": [
+        "assets",
+        "cash_flow",
+        "shares_fractions",
+        "fees",
+        "asset_change",
+        "reward",
+        "cumulative_reward",
+        "guard_flags",
+        "peak_flags",
+        "step_sequence"
+      ]
+    }
+  },
+  "baselines": {
+    "buy_hold": {
+      "final_assets_close": 122308.96468853398,
+      "final_assets_prev_high": 128113.61482270248,
+      "peak_assets": 142492.27516874953,
+      "score": 0.12230896468853397,
+      "cagr": 0.10660084159792538,
+      "sharpe": 0.4635436845321606,
+      "max_drawdown": 0.3087294233569948,
+      "trades": 29,
+      "penalties": 0,
+      "total_fees": 3846.1538460652127,
+      "cumulative_reward": 19.800886116925113,
+      "sessions": 501,
+      "score_prev_high": 0.12811361482270248,
+      "score_peak": 0.14249227516874954,
+      "target_reached": false,
+      "model_buy_requests": 29,
+      "model_sell_requests": 0,
+      "model_hold_requests": 472,
+      "guard_overrides": 0,
+      "meaningful_model_trades": 4,
+      "mean_exposure": 0.9994991415671522,
+      "turnover": 0.9615384615163032
+    },
+    "sma": {
+      "final_assets_close": 62911.17225128986,
+      "final_assets_prev_high": 65508.508237273105,
+      "peak_assets": 119260.49681129128,
+      "score": 0.06291117225128987,
+      "cagr": -0.20793417126056812,
+      "sharpe": -1.0170771522131778,
+      "max_drawdown": 0.4724894333549884,
+      "trades": 40,
+      "penalties": 0,
+      "total_fees": 39414.3344499617,
+      "cumulative_reward": -46.534519346313346,
+      "sessions": 501,
+      "score_prev_high": 0.06550850823727311,
+      "score_peak": 0.11926049681129128,
+      "target_reached": false,
+      "model_buy_requests": 7,
+      "model_sell_requests": 12,
+      "model_hold_requests": 482,
+      "guard_overrides": 21,
+      "meaningful_model_trades": 19,
+      "mean_exposure": 0.5964300756401228,
+      "turnover": 9.853583612490425
+    },
+    "momentum": {
+      "final_assets_close": 50505.74512578138,
+      "final_assets_prev_high": 50711.48986459167,
+      "peak_assets": 119260.49681129128,
+      "score": 0.05050574512578138,
+      "cagr": -0.29077801433809847,
+      "sharpe": -1.3640736722554092,
+      "max_drawdown": 0.576509016177437,
+      "trades": 61,
+      "penalties": 0,
+      "total_fees": 76143.74054380474,
+      "cumulative_reward": -68.50890381821492,
+      "sessions": 501,
+      "score_prev_high": 0.05071148986459167,
+      "score_peak": 0.11926049681129128,
+      "target_reached": false,
+      "model_buy_requests": 16,
+      "model_sell_requests": 27,
+      "model_hold_requests": 458,
+      "guard_overrides": 18,
+      "meaningful_model_trades": 43,
+      "mean_exposure": 0.6320908138601848,
+      "turnover": 19.035935135951185
+    }
+  },
+  "model_hashes": {
+    "run_01/agent.zip": "d4711950b759cfe7ceab2066263680cf0e20edadbc8cccc01ccbdfdfaba0c478",
+    "run_01/normalizer.pkl": "3e9dda5eddaa42922d5404f47f4cca740184df297939ec8764bd9e6d13634c90",
+    "run_02/agent.zip": "9e1d4aa641ecf8463fdd56a84d5c88584f46ae168f23baf12e9c2d880d2dab9d",
+    "run_02/normalizer.pkl": "1265fa9e6bc05b7c457afaa28fbf838f5bde1cda642bedd4072366fe013a52e2",
+    "run_03/agent.zip": "624c931f510f9237a68b6c6bf081ce0d6c886ba2db2c1465b91cf599594c6968",
+    "run_03/normalizer.pkl": "f1694863fead1c71b6f58d380c94341f24ad165af94343ce8fe3c2e7ca9dbca5",
+    "run_04/agent.zip": "a7eeb21e3e162b86dbdc02cdb0b6b0ef92d19b1dbea2706c8f49b2ae599167e6",
+    "run_04/normalizer.pkl": "cfe5139f8fa3bad8261ca15705eafdb25f8a663dac8876acaa483eb38a7470f9",
+    "run_05/agent.zip": "0d905c93a9a617ec479521cb9ad646341626d864d5468f67eeff6cb94dbf4228",
+    "run_05/normalizer.pkl": "653aa11fa8bba84894aa922d16ea511ee0e676072af4170032b7fe34beb77edc",
+    "run_06/agent.zip": "d266faf15aec745ef1ab66fdc44f960c3e4dc76017d58758da8ab9178c07437a",
+    "run_06/normalizer.pkl": "e78a39ab5585095fa9cd93728fc2b7fa40c8a0c18c1f6da48719d7929f1597e7",
+    "run_07/agent.zip": "2ed59c304607438ca20e2dce448806389ac2e4f9643100a3bf5e84509a51a78c",
+    "run_07/normalizer.pkl": "6f647539826146d509ff486846f2d9fad3a994729823328fa8dfc18ad542162b",
+    "run_08/agent.zip": "8c45018df1e7163929a9e3e2048bf4844773c454895250d0a5ad8c685a46cfc4",
+    "run_08/normalizer.pkl": "69120a17a8ea01d4c5aaa4c5b533600526b8f531ea0e31e99f898e11f6f22cae",
+    "run_09/agent.zip": "e6db7001d3b32111bce375a0bca3782b1d0d21c9d9a8626860ce0be22b5e467d",
+    "run_09/normalizer.pkl": "1230e95d6b67150e636e7d0a3ee7ebfc355206026017e9ceda2f35b0e0b1f445",
+    "run_10/agent.zip": "3e25ee0293df5d809747d8504e62956a951a57afc67486ade17b7e32af0ff9cd",
+    "run_10/normalizer.pkl": "42177208e441983352ed09f9d85a16bca1abd6148bf0ca3e87e268dcb48d33d1"
+  },
+  "asset_logs": {
+    "assets_train.csv": "7940996403a9c733a06f52b8a2fb1bf66ffc6f541d16a0b2cc89da78c7b90335",
+    "assets_test.csv": "aa771426bb7ab0862ef8c4a5b443c9f77873498d65692eeba7ec89e3fc4030a7"
+  },
+  "algorithm_changes": [
+    "temporal summary: recent mean and direction",
+    "side-balanced expert sampling using existing BC_CLASS_POWER",
+    "frozen validation checkpoint selection after PPO updates"
+  ],
+  "training_log_scope": "all transitions of all 10 runs/8 ranks; validation all runs; frozen train replay selected run",
+  "selection_file_sha256": "abf01d393fa72f9da7a5795cae37901b0cded36ffb933b6db0f878b8cce851a0",
+  "rule_verification": {
+    "unchanged_files": {
+      "environment.py": true,
+      "data.py": true,
+      "baseline.py": true,
+      "config.yaml": true
+    },
+    "config_sha256": "a5f11b3c3f982ed0147b5ffe2907d0335690f00fa7c0a6d90604cbab655cb1fb"
+  },
+  "software": {
+    "numpy": "2.3.4",
+    "pandas": "2.3.3",
+    "torch": "2.9.1",
+    "stable-baselines3": "2.7.1",
+    "sb3-contrib": "2.7.1",
+    "gymnasium": "1.2.2",
+    "reportlab": "5.1.0"
+  },
+  "checks": {
+    "pytest_passed": 33,
+    "training_transitions_logged": 327680,
+    "train_csv_rows": 334944,
+    "test_csv_rows": 5020,
+    "asset_csv_columns": 21,
+    "test_csv_arithmetic_passed": true,
+    "test_summary_csv_consistency_passed": true,
+    "pdf_visual_qa_passed": true,
+    "pdf_text_bounds_passed": true,
+    "all_run_summary_verification_passed": true,
+    "legacy_test_results_removed": true,
+    "current_baselines_verified": true,
+    "report_preserved_without_regeneration": true
+  },
+  "source_files": {
+    "agent.py": "3bb5d1629279615b385e91f608ea714127ce1a9c501aa88c566b5e2f2bf3359d",
+    "environment.py": "a6bf01e868a1b583ff61c683a5f4476e30d932f67a66c7e25248e9598e01fb4a",
+    "data.py": "fa27b670751d9801e53ddfaeade9485d18ccfae660baad31b1dcb0fd6eed1f9b",
+    "baseline.py": "4e92a2c5133a9fb7eb2c28429df0bf9fd41e7e1bae6d66082d61848c3e5e800f",
+    "main.py": "f0a08edda807c41fb0968e8c134d0de87750c9003c6ec8b2a2d6ac71825c772e",
+    "report.py": "3e3838f9709103096e7dba8ce52650a1558fcc9d553ea527c07ff9cd87bd2b60"
+  },
+  "highest_optimization_peak_run": 6,
+  "highest_test_peak_run": 9,
+  "submission": {
+    "path": "output/AMZN_NOP_BAI.zip",
+    "file_count": 39,
+    "python_source_files": 6,
+    "python_test_files": 1,
+    "result_csv_files": 2,
+    "model_normalizer_pairs": 10
+  },
+  "test_summary": {
+    "runs": 10,
+    "mean_final_assets": 775318.2230662279,
+    "median_final_assets": 791564.6356605187,
+    "std_final_assets": 106738.66130796715,
+    "min_final_assets": 609508.593183278,
+    "max_final_assets": 919870.8970464368,
+    "profitable_runs": 10,
+    "target_reached_runs": 0
+  },
+  "result_kind": "test_csv",
+  "reconciliation": {
+    "source": "logs/assets_test.csv",
+    "result_kind": "test_csv",
+    "updated_at_local": "2026-10-31T18:02:06+07:00",
+    "timezone": "Asia/Saigon",
+    "primary_model": "models/run_09/agent.zip",
+    "primary_normalizer": "models/run_09/normalizer.pkl",
+    "scope": "test metrics, README, run.log and report derived from assets_test.csv"
+  },
+  "report": {
+    "path": "output/pdf/BAO_CAO_AMZN.pdf",
+    "sha256": "2d6e8a31dd420a9149bcc8be6450a09e9dec6f011fb5b532680b3be74998e847",
+    "pages": 8,
+    "result_kind": "test_csv",
+    "visual_qa": "8 pages rendered; contact sheet and pages 4, 5, 8 inspected; no overlap or text outside margins"
+  }
+}

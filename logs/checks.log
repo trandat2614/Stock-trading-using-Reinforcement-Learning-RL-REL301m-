@@ -1,0 +1,24 @@
+.................................                                        [100%]
+============================== warnings summary ===============================
+tests/test_core.py::test_gym_api
+  D:\ky 8\REL\Rel_project\amzn_rl\.venv\Lib\site-packages\gymnasium\utils\env_checker.py:311: UserWarning: [33mWARN: A Box observation space minimum value is -infinity. This is probably too low.[0m
+    logger.warn(
+
+tests/test_core.py::test_gym_api
+  D:\ky 8\REL\Rel_project\amzn_rl\.venv\Lib\site-packages\gymnasium\utils\env_checker.py:315: UserWarning: [33mWARN: A Box observation space maximum value is infinity. This is probably too high.[0m
+    logger.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+33 passed, 2 warnings in 22.29s
+
+TEST_CSV checks
+PASS all 10 CSV runs: asset accounting, cash flow, share fractions, fees, rewards, peak flags.
+PASS test coverage: 10 runs x (1 initial row + 501 sessions), 21 columns.
+PASS primary model: run 09, seed 8, checkpoint 32768; all model file hashes verified.
+PASS test summaries: derived from logs/assets_test.csv.
+PASS report: existing PDF checksum verified; previous visual QA retained.
+PASS old-result audit: obsolete reference, test curve and previous-test delta removed.
+PASS current baseline replays: Buy & Hold, SMA and momentum metrics verified.
+PASS all 10 test/validation summaries, optimization peaks and selected train replay match CSV files.
+PASS report preservation: PDF bytes, SHA256 and modification time unchanged.
+PASS all CSV, market data, model and normalizer files unchanged.
